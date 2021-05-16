@@ -1,0 +1,69 @@
+2021-Apr-02 19:03:00:                                    _                 
+2021-Apr-02 19:03:00:  _ __   __ _ _ __   ___  _ __ ___ (_)_ __   ___ _ __ 
+2021-Apr-02 19:03:00: | '_ \ / _` | '_ \ / _ \| '_ ` _ \| | '_ \ / _ \ '__|
+2021-Apr-02 19:03:00: | | | | (_| | | | | (_) | | | | | | | | | |  __/ |   
+2021-Apr-02 19:03:00: |_| |_|\__,_|_| |_|\___/|_| |_| |_|_|_| |_|\___|_|   
+2021-Apr-02 19:03:00: 
+2021-Apr-02 19:03:00: Version 3.3.3-cuda11
+2021-Apr-02 19:03:00: Started EthMan server on port 3333 with a password (read-only mode).
+2021-Apr-02 19:03:00: Started web interface on port 9090 with a password.
+2021-Apr-02 19:03:00: CUDA driver version is 11.2, runtime version is 11.1
+2021-Apr-02 19:03:00: Single device detected
+2021-Apr-02 19:03:00: GPU 0 PCI 01:00.0, Platform: CUDA, Name: GeForce RTX 3070, 8192 MB available
+2021-Apr-02 19:03:00: -------------------Ethash:------------------
+2021-Apr-02 19:03:00: Currency: Ethereum
+2021-Apr-02 19:03:00: Wallet: wallet
+2021-Apr-02 19:03:00: Rig name: ferris
+2021-Apr-02 19:03:00: Email: email
+2021-Apr-02 19:03:00: Hashrate threshold to restart miner is not set
+2021-Apr-02 19:03:00: Added pool: eth-eu1.nanopool.org:9433
+2021-Apr-02 19:03:00: Added pool: eth-eu2.nanopool.org:9433
+2021-Apr-02 19:03:00: Added pool: eth-us-east1.nanopool.org:9433
+2021-Apr-02 19:03:00: Added pool: eth-us-west1.nanopool.org:9433
+2021-Apr-02 19:03:00: Added pool: eth-jp1.nanopool.org:9433
+2021-Apr-02 19:03:00: Added pool: eth-au1.nanopool.org:9433
+2021-Apr-02 19:03:00: Added pool: eth-asia1.nanopool.org:9433
+2021-Apr-02 19:03:00: Auto pool sorting is enabled
+2021-Apr-02 19:03:00: Using all GPU devices
+2021-Apr-02 19:03:00: Memory tweak: 1
+2021-Apr-02 19:03:00: -------------Common parameters:-------------
+2021-Apr-02 19:03:00: Log path: ./logs/
+2021-Apr-02 19:03:00: Log is written to file
+2021-Apr-02 19:03:00: GPU watchdog is enabled
+2021-Apr-02 19:03:00: Never calling reboot.bat (always restarting the miner in case of errors). 
+2021-Apr-02 19:03:00: Setting up algorithm: Ethash
+2021-Apr-02 19:03:01: Connecting to pools...
+2021-Apr-02 19:03:01: Connected to pool: eth-eu1.nanopool.org:9433 | IP: 213.32.74.230 | ping: 104 ms.
+2021-Apr-02 19:03:01: New job from eth-eu1.nanopool.org:9433 | share difficulty = 10000 MH, epoch 405 (4263 MB)
+2021-Apr-02 19:03:01: Ethereum - Total speed: 0.000 H/s, Total shares: 0 Rejected: 0, Time: 00:01
+2021-Apr-02 19:03:01: GPU0 t=52°C fan 48% power 48.31W. Total power: 48.31W
+2021-Apr-02 19:03:01: New job from eth-eu1.nanopool.org:9433
+2021-Apr-02 19:03:01: Ethereum - Total speed: 0.000 H/s, Total shares: 0 Rejected: 0, Time: 00:01
+2021-Apr-02 19:03:01: Ethereum last 10 min - Total: 0.000 H/s.
+2021-Apr-02 19:03:03: New job from eth-eu1.nanopool.org:9433
+2021-Apr-02 19:03:03: Ethereum - Total speed: 0.000 H/s, Total shares: 0 Rejected: 0, Time: 00:02
+2021-Apr-02 19:03:03: GPU0 t=52°C fan 47% power 48.67W. Total power: 48.67W
+2021-Apr-02 19:03:03: New job from eth-eu1.nanopool.org:9433
+2021-Apr-02 19:03:03: Ethereum - Total speed: 0.000 H/s, Total shares: 0 Rejected: 0, Time: 00:03
+2021-Apr-02 19:03:06: New job from eth-eu1.nanopool.org:9433
+2021-Apr-02 19:03:06: Ethereum - Total speed: 0.000 H/s, Total shares: 0 Rejected: 0, Time: 00:06
+2021-Apr-02 19:03:06: GPU0 t=64°C fan 45% power 229.42W. Total power: 229.42W
+2021-Apr-02 19:03:08: GPU0: 4263 MB DAG generated in 3.82 seconds
+2021-Apr-02 19:03:09: New job from eth-eu1.nanopool.org:9433
+2021-Apr-02 19:03:09: Ethereum - Total speed: 56.660 MH/s, Total shares: 0 Rejected: 0, Time: 00:09
+2021-Apr-02 19:03:09: Ethereum last 10 min - Total: 56.660 MH/s.
+2021-Apr-02 19:03:12: New job from eth-eu1.nanopool.org:9433
+2021-Apr-02 19:03:12: Ethereum - Total speed: 56.622 MH/s, Total shares: 0 Rejected: 0, Time: 00:11
+2021-Apr-02 19:03:12: GPU0 t=64°C fan 45% power 203.07W. Total power: 203.07W
+2021-Apr-02 19:03:15: New job from eth-eu1.nanopool.org:9433
+2021-Apr-02 19:03:15: Ethereum - Total speed: 56.057 MH/s, Total shares: 0 Rejected: 0, Time: 00:15
+2021-Apr-02 19:03:18: New job from eth-eu1.nanopool.org:9433
+2021-Apr-02 19:03:18: Ethereum - Total speed: 55.959 MH/s, Total shares: 0 Rejected: 0, Time: 00:18
+2021-Apr-02 19:03:18: GPU0 t=67°C fan 47% power 219.44W. Total power: 219.44W
+2021-Apr-02 19:03:21: New job from eth-eu1.nanopool.org:9433
+2021-Apr-02 19:03:21: Ethereum - Total speed: 55.940 MH/s, Total shares: 0 Rejected: 0, Time: 00:21
+2021-Apr-02 19:03:21: Ethereum last 10 min - Total: 56.232 MH/s.
+2021-Apr-02 19:03:24: New job from eth-eu1.nanopool.org:9433
+2021-Apr-02 19:03:24: Ethereum - Total speed: 55.825 MH/s, Total shares: 0 Rejected: 0, Time: 00:23
+2021-Apr-02 19:03:24: GPU0 t=68°C fan 50% power 217.83W. Total power: 217.83W
+2021-Apr-02 19:03:25: Terminating, please wait ...

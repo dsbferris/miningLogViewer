@@ -1,0 +1,52 @@
+2021-02-18 21:54:56: <info>                                    _                 
+2021-02-18 21:54:56: <info>  _ __   __ _ _ __   ___  _ __ ___ (_)_ __   ___ _ __ 
+2021-02-18 21:54:56: <info> | '_ \ / _` | '_ \ / _ \| '_ ` _ \| | '_ \ / _ \ '__|
+2021-02-18 21:54:56: <info> | | | | (_| | | | | (_) | | | | | | | | | |  __/ |   
+2021-02-18 21:54:56: <info> |_| |_|\__,_|_| |_|\___/|_| |_| |_|_|_| |_|\___|_|   
+2021-02-18 21:54:56: <info> 
+2021-02-18 21:54:56: <info> Version 3.2.2-cuda11
+2021-02-18 21:54:56: <info>  Started EthMan server on port 3333 with a password (read-only mode).
+2021-02-18 21:54:56: <info>  Started web interface on port 9090 with a password.
+2021-02-18 21:54:56: <info>  CUDA driver version is 11.2, runtime version is 11.1
+2021-02-18 21:54:56: <info> Single device detected
+2021-02-18 21:54:56: <info> GPU 0 PCI 01:00.0, Platform: CUDA, Name: GeForce RTX 3070, 8192 MB available
+2021-02-18 21:54:56: <info> -------------------Ethash:------------------
+2021-02-18 21:54:56: <info> Currency: Ethereum
+2021-02-18 21:54:56: <info> Wallet: wallet
+2021-02-18 21:54:56: <info> Rig name: ferris
+2021-02-18 21:54:56: <info> Email: email
+2021-02-18 21:54:56: <info> Hashrate threshold to restart miner: 30.00 MH/s
+2021-02-18 21:54:56: <info> Added pool: eth-eu1.nanopool.org:9433
+2021-02-18 21:54:56: <info> Added pool: eth-eu2.nanopool.org:9433
+2021-02-18 21:54:56: <info> Added pool: eth-us-east1.nanopool.org:9433
+2021-02-18 21:54:56: <info> Added pool: eth-us-west1.nanopool.org:9433
+2021-02-18 21:54:56: <info> Added pool: eth-asia1.nanopool.org:9433
+2021-02-18 21:54:56: <info> Added pool: eth-jp1.nanopool.org:9433
+2021-02-18 21:54:56: <info> Added pool: eth-au1.nanopool.org:9433
+2021-02-18 21:54:56: <info> Auto pool sorting is enabled
+2021-02-18 21:54:56: <info> Using all GPU devices
+2021-02-18 21:54:56: <info> Memory tweak: 1
+2021-02-18 21:54:56: <info> -------------Common parameters:-------------
+2021-02-18 21:54:56: <info> Log path: ./logs/
+2021-02-18 21:54:56: <info> Log is written to file
+2021-02-18 21:54:56: <info> GPU watchdog is enabled
+2021-02-18 21:54:56: <info> Restart count before calling reboot.bat: 5
+2021-02-18 21:54:56: <info>  Setting up algorithm: Ethash
+2021-02-18 21:54:57: <info>  Connecting to pools...
+2021-02-18 21:54:57: <info>  Connected to pool: eth-eu1.nanopool.org:9433 | IP: 92.222.10.59 | ping: 211 ms.
+2021-02-18 21:54:57: <info>  New job from eth-eu1.nanopool.org:9433 | share difficulty = 10000 MH, epoch 396 (4191 MB)
+2021-02-18 21:54:57: [Statistics] Ethereum - Total speed: 0.000 H/s, Total shares: 0 Rejected: 0, Time: 00:01
+2021-02-18 21:54:57: [Statistics] GPU0 t=50°C fan 31% power 55.06W. Total power: 55.06W
+2021-02-18 21:54:57: <info>  New job from eth-eu1.nanopool.org:9433
+2021-02-18 21:54:57: [Statistics] Ethereum - Total speed: 0.000 H/s, Total shares: 0 Rejected: 0, Time: 00:01
+2021-02-18 21:54:57: [Statistics] Ethereum last 10 min - Total: 0.000 H/s.
+2021-02-18 21:54:59: <info>  New job from eth-eu1.nanopool.org:9433
+2021-02-18 21:54:59: [Statistics] Ethereum - Total speed: 0.000 H/s, Total shares: 0 Rejected: 0, Time: 00:03
+2021-02-18 21:54:59: [Statistics] GPU0 t=49°C fan 31% power 52.52W. Total power: 52.52W
+2021-02-18 21:55:02: <info>  New job from eth-eu1.nanopool.org:9433
+2021-02-18 21:55:02: [Statistics] Ethereum - Total speed: 0.000 H/s, Total shares: 0 Rejected: 0, Time: 00:06
+2021-02-18 21:55:05: <info>  GPU0: 4191 MB DAG generated in 4.00 seconds
+2021-02-18 21:55:05: <info>  New job from eth-eu1.nanopool.org:9433
+2021-02-18 21:55:05: [Statistics] Ethereum - Total speed: 49.887 MH/s, Total shares: 0 Rejected: 0, Time: 00:09
+2021-02-18 21:55:05: [Statistics] GPU0 t=54°C fan 31% power 120.83W. Total power: 120.83W
+2021-02-18 21:55:06: <info>  Terminating, please wait ...

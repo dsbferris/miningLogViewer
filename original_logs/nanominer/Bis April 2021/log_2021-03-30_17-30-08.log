@@ -1,0 +1,50 @@
+2021-Mar-30 17:30:08:                                    _                 
+2021-Mar-30 17:30:08:  _ __   __ _ _ __   ___  _ __ ___ (_)_ __   ___ _ __ 
+2021-Mar-30 17:30:08: | '_ \ / _` | '_ \ / _ \| '_ ` _ \| | '_ \ / _ \ '__|
+2021-Mar-30 17:30:08: | | | | (_| | | | | (_) | | | | | | | | | |  __/ |   
+2021-Mar-30 17:30:08: |_| |_|\__,_|_| |_|\___/|_| |_| |_|_|_| |_|\___|_|   
+2021-Mar-30 17:30:08: 
+2021-Mar-30 17:30:08: Version 3.3.2-cuda11
+2021-Mar-30 17:30:08: Started EthMan server on port 3333 with a password (read-only mode).
+2021-Mar-30 17:30:08: Started web interface on port 9090 with a password.
+2021-Mar-30 17:30:08: CUDA driver version is 11.2, runtime version is 11.1
+2021-Mar-30 17:30:08: Single device detected
+2021-Mar-30 17:30:08: GPU 0 PCI 01:00.0, Platform: CUDA, Name: GeForce RTX 3070, 8192 MB available
+2021-Mar-30 17:30:08: -------------------Ethash:------------------
+2021-Mar-30 17:30:08: Currency: Ethereum
+2021-Mar-30 17:30:08: Wallet: wallet
+2021-Mar-30 17:30:08: Rig name: ferris
+2021-Mar-30 17:30:08: Email: email
+2021-Mar-30 17:30:08: Hashrate threshold to restart miner is not set
+2021-Mar-30 17:30:08: Added pool: eth-eu2.nanopool.org:9433
+2021-Mar-30 17:30:08: Added pool: eth-eu1.nanopool.org:9433
+2021-Mar-30 17:30:08: Added pool: eth-us-east1.nanopool.org:9433
+2021-Mar-30 17:30:08: Added pool: eth-us-west1.nanopool.org:9433
+2021-Mar-30 17:30:08: Added pool: eth-jp1.nanopool.org:9433
+2021-Mar-30 17:30:08: Added pool: eth-au1.nanopool.org:9433
+2021-Mar-30 17:30:08: Added pool: eth-asia1.nanopool.org:9433
+2021-Mar-30 17:30:08: Auto pool sorting is enabled
+2021-Mar-30 17:30:08: Using all GPU devices
+2021-Mar-30 17:30:08: Memory tweak: 1
+2021-Mar-30 17:30:08: -------------Common parameters:-------------
+2021-Mar-30 17:30:08: Log path: ./logs/
+2021-Mar-30 17:30:08: Log is written to file
+2021-Mar-30 17:30:08: GPU watchdog is enabled
+2021-Mar-30 17:30:08: Never calling reboot.bat (always restarting the miner in case of errors). 
+2021-Mar-30 17:30:08: Setting up algorithm: Ethash
+2021-Mar-30 17:30:09: Connecting to pools...
+2021-Mar-30 17:30:09: Connected to pool: eth-eu2.nanopool.org:9433 | IP: 51.15.55.100 | ping: 116 ms.
+2021-Mar-30 17:30:09: New job from eth-eu2.nanopool.org:9433 | share difficulty = 10000 MH, epoch 404 (4255 MB)
+2021-Mar-30 17:30:09: Ethereum - Total speed: 0.000 H/s, Total shares: 0 Rejected: 0, Time: 00:01
+2021-Mar-30 17:30:09: GPU0 t=37°C fan 31% power 47.20W. Total power: 47.20W
+2021-Mar-30 17:30:09: New job from eth-eu2.nanopool.org:9433
+2021-Mar-30 17:30:09: Ethereum - Total speed: 0.000 H/s, Total shares: 0 Rejected: 0, Time: 00:01
+2021-Mar-30 17:30:09: Ethereum last 10 min - Total: 0.000 H/s.
+2021-Mar-30 17:30:12: New job from eth-eu2.nanopool.org:9433
+2021-Mar-30 17:30:12: Ethereum - Total speed: 0.000 H/s, Total shares: 0 Rejected: 0, Time: 00:03
+2021-Mar-30 17:30:12: GPU0 t=37°C fan 31% power 46.36W. Total power: 46.36W
+2021-Mar-30 17:30:12: New job from eth-eu2.nanopool.org:9433
+2021-Mar-30 17:30:12: Ethereum - Total speed: 0.000 H/s, Total shares: 0 Rejected: 0, Time: 00:03
+2021-Mar-30 17:30:12: Terminating, please wait ...
+2021-Mar-30 17:30:12: Resetting clocks for device #0...
+2021-Mar-30 17:30:12: Resetting clocks for device #0 is done.

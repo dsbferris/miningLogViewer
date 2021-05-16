@@ -1,0 +1,320 @@
+2021-03-09 11:07:34: <info>                                    _                 
+2021-03-09 11:07:34: <info>  _ __   __ _ _ __   ___  _ __ ___ (_)_ __   ___ _ __ 
+2021-03-09 11:07:34: <info> | '_ \ / _` | '_ \ / _ \| '_ ` _ \| | '_ \ / _ \ '__|
+2021-03-09 11:07:34: <info> | | | | (_| | | | | (_) | | | | | | | | | |  __/ |   
+2021-03-09 11:07:34: <info> |_| |_|\__,_|_| |_|\___/|_| |_| |_|_|_| |_|\___|_|   
+2021-03-09 11:07:34: <info> 
+2021-03-09 11:07:34: <info> Version 3.2.2-cuda11
+2021-03-09 11:07:34: <info>  Started EthMan server on port 3333 with a password (read-only mode).
+2021-03-09 11:07:34: <info>  Started web interface on port 9090 with a password.
+2021-03-09 11:07:34: <info>  CUDA driver version is 11.2, runtime version is 11.1
+2021-03-09 11:07:34: <info> Single device detected
+2021-03-09 11:07:34: <info> GPU 0 PCI 01:00.0, Platform: CUDA, Name: GeForce RTX 3070, 8192 MB available
+2021-03-09 11:07:34: <info> -------------------Ethash:------------------
+2021-03-09 11:07:34: <info> Currency: Ethereum
+2021-03-09 11:07:34: <info> Wallet: wallet
+2021-03-09 11:07:34: <info> Rig name: ferris
+2021-03-09 11:07:34: <info> Email: email
+2021-03-09 11:07:34: <info> Hashrate threshold to restart miner is not set
+2021-03-09 11:07:34: <info> Added pool: eth-eu2.nanopool.org:9433
+2021-03-09 11:07:34: <info> Added pool: eth-eu1.nanopool.org:9433
+2021-03-09 11:07:34: <info> Added pool: eth-us-east1.nanopool.org:9433
+2021-03-09 11:07:34: <info> Added pool: eth-us-west1.nanopool.org:9433
+2021-03-09 11:07:34: <info> Added pool: eth-jp1.nanopool.org:9433
+2021-03-09 11:07:34: <info> Added pool: eth-au1.nanopool.org:9433
+2021-03-09 11:07:34: <info> Added pool: eth-asia1.nanopool.org:9433
+2021-03-09 11:07:34: <info> Auto pool sorting is enabled
+2021-03-09 11:07:34: <info> Using all GPU devices
+2021-03-09 11:07:34: <info> Memory tweak: 1
+2021-03-09 11:07:34: <info> -------------Common parameters:-------------
+2021-03-09 11:07:34: <info> Log path: ./logs/
+2021-03-09 11:07:34: <info> Log is written to file
+2021-03-09 11:07:34: <info> GPU watchdog is enabled
+2021-03-09 11:07:34: <info> Restart count before calling reboot.bat: 5
+2021-03-09 11:07:34: <info>  Setting up algorithm: Ethash
+2021-03-09 11:07:35: <info>  Connecting to pools...
+2021-03-09 11:07:35: <info>  Connected to pool: eth-eu2.nanopool.org:9433 | IP: 213.32.74.157 | ping: 131 ms.
+2021-03-09 11:07:36: <info>  New job from eth-eu2.nanopool.org:9433 | share difficulty = 10000 MH, epoch 400 (4223 MB)
+2021-03-09 11:07:36: [Statistics] Ethereum - Total speed: 0.000 H/s, Total shares: 0 Rejected: 0, Time: 00:01
+2021-03-09 11:07:36: [Statistics] GPU0 t=31°C fan 30% power 44.35W. Total power: 44.35W
+2021-03-09 11:07:36: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:07:36: [Statistics] Ethereum - Total speed: 0.000 H/s, Total shares: 0 Rejected: 0, Time: 00:01
+2021-03-09 11:07:36: [Statistics] Ethereum last 10 min - Total: 0.000 H/s.
+2021-03-09 11:07:37: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:07:37: [Statistics] Ethereum - Total speed: 0.000 H/s, Total shares: 0 Rejected: 0, Time: 00:03
+2021-03-09 11:07:37: [Statistics] GPU0 t=31°C fan 30% power 44.01W. Total power: 44.01W
+2021-03-09 11:07:38: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:07:38: [Statistics] Ethereum - Total speed: 0.000 H/s, Total shares: 0 Rejected: 0, Time: 00:03
+2021-03-09 11:07:41: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:07:41: [Statistics] Ethereum - Total speed: 0.000 H/s, Total shares: 0 Rejected: 0, Time: 00:06
+2021-03-09 11:07:41: [Statistics] GPU0 t=43°C fan 30% power 168.51W. Total power: 168.51W
+2021-03-09 11:07:42: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:07:42: [Statistics] Ethereum - Total speed: 0.000 H/s, Total shares: 0 Rejected: 0, Time: 00:08
+2021-03-09 11:07:42: [Statistics] Ethereum last 10 min - Total: 0.000 H/s.
+2021-03-09 11:07:42: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:07:42: [Statistics] Ethereum - Total speed: 0.000 H/s, Total shares: 0 Rejected: 0, Time: 00:08
+2021-03-09 11:07:42: [Statistics] GPU0 t=45°C fan 30% power 198.29W. Total power: 198.29W
+2021-03-09 11:07:43: <info>  GPU0: 4223 MB DAG generated in 3.83 seconds
+2021-03-09 11:07:45: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:07:45: [Statistics] Ethereum - Total speed: 50.137 MH/s, Total shares: 0 Rejected: 0, Time: 00:11
+2021-03-09 11:07:48: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:07:48: [Statistics] Ethereum - Total speed: 50.208 MH/s, Total shares: 0 Rejected: 0, Time: 00:14
+2021-03-09 11:07:48: [Statistics] GPU0 t=39°C fan 30% power 120.18W. Total power: 120.18W
+2021-03-09 11:07:51: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:07:51: [Statistics] Ethereum - Total speed: 51.036 MH/s, Total shares: 0 Rejected: 0, Time: 00:17
+2021-03-09 11:07:51: [Statistics] Ethereum last 10 min - Total: 50.397 MH/s.
+2021-03-09 11:07:55: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:07:55: [Statistics] Ethereum - Total speed: 51.905 MH/s, Total shares: 0 Rejected: 0, Time: 00:20
+2021-03-09 11:07:55: [Statistics] GPU0 t=39°C fan 30% power 120.87W. Total power: 120.87W
+2021-03-09 11:07:57: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:07:57: [Statistics] Ethereum - Total speed: 52.680 MH/s, Total shares: 0 Rejected: 0, Time: 00:23
+2021-03-09 11:08:00: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:08:00: [Statistics] Ethereum - Total speed: 53.370 MH/s, Total shares: 0 Rejected: 0, Time: 00:26
+2021-03-09 11:08:00: [Statistics] GPU0 t=40°C fan 30% power 120.86W. Total power: 120.86W
+2021-03-09 11:08:03: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:08:03: [Statistics] Ethereum - Total speed: 53.993 MH/s, Total shares: 0 Rejected: 0, Time: 00:29
+2021-03-09 11:08:03: [Statistics] Ethereum last 10 min - Total: 51.874 MH/s.
+2021-03-09 11:08:05: <info>  Ethereum - SHARE FOUND (GPU: 0, nonce: 0xb7c4c4944c41a9d6).
+2021-03-09 11:08:05: <info> Ethereum: share accepted (42 ms)!
+2021-03-09 11:08:06: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:08:06: [Statistics] Ethereum - Total speed: 54.553 MH/s, Total shares: 1 Rejected: 0, Time: 00:32
+2021-03-09 11:08:06: [Statistics] GPU0 t=41°C fan 30% power 120.89W. Total power: 120.89W
+2021-03-09 11:08:09: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:08:09: [Statistics] Ethereum - Total speed: 55.054 MH/s, Total shares: 1 Rejected: 0, Time: 00:35
+2021-03-09 11:08:13: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:08:13: [Statistics] Ethereum - Total speed: 55.513 MH/s, Total shares: 1 Rejected: 0, Time: 00:38
+2021-03-09 11:08:13: [Statistics] GPU0 t=41°C fan 30% power 120.83W. Total power: 120.83W
+2021-03-09 11:08:15: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:08:15: [Statistics] Ethereum - Total speed: 55.918 MH/s, Total shares: 1 Rejected: 0, Time: 00:41
+2021-03-09 11:08:15: [Statistics] Ethereum last 10 min - Total: 53.133 MH/s.
+2021-03-09 11:08:19: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:08:19: [Statistics] Ethereum - Total speed: 56.285 MH/s, Total shares: 1 Rejected: 0, Time: 00:44
+2021-03-09 11:08:19: [Statistics] GPU0 t=42°C fan 30% power 120.75W. Total power: 120.75W
+2021-03-09 11:08:21: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:08:21: [Statistics] Ethereum - Total speed: 56.616 MH/s, Total shares: 1 Rejected: 0, Time: 00:47
+2021-03-09 11:08:22: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:08:23: [Statistics] Ethereum - Total speed: 56.910 MH/s, Total shares: 1 Rejected: 0, Time: 00:48
+2021-03-09 11:08:23: [Statistics] GPU0 t=42°C fan 30% power 120.71W. Total power: 120.71W
+2021-03-09 11:08:23: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:08:23: [Statistics] Ethereum - Total speed: 57.173 MH/s, Total shares: 1 Rejected: 0, Time: 00:48
+2021-03-09 11:08:23: [Statistics] Ethereum last 10 min - Total: 53.758 MH/s.
+2021-03-09 11:08:26: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:08:26: [Statistics] Ethereum - Total speed: 57.282 MH/s, Total shares: 1 Rejected: 0, Time: 00:51
+2021-03-09 11:08:26: [Statistics] GPU0 t=43°C fan 30% power 120.89W. Total power: 120.89W
+2021-03-09 11:08:29: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:08:29: [Statistics] Ethereum - Total speed: 57.516 MH/s, Total shares: 1 Rejected: 0, Time: 00:54
+2021-03-09 11:08:32: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:08:32: [Statistics] Ethereum - Total speed: 57.719 MH/s, Total shares: 1 Rejected: 0, Time: 00:57
+2021-03-09 11:08:32: [Statistics] GPU0 t=43°C fan 30% power 120.67W. Total power: 120.67W
+2021-03-09 11:08:35: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:08:35: [Statistics] Ethereum - Total speed: 57.898 MH/s, Total shares: 1 Rejected: 0, Time: 01:00
+2021-03-09 11:08:35: [Statistics] Ethereum last 10 min - Total: 54.668 MH/s.
+2021-03-09 11:08:38: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:08:38: [Statistics] Ethereum - Total speed: 58.071 MH/s, Total shares: 1 Rejected: 0, Time: 01:03
+2021-03-09 11:08:38: [Statistics] GPU0 t=43°C fan 30% power 120.82W. Total power: 120.82W
+2021-03-09 11:08:40: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:08:40: [Statistics] Ethereum - Total speed: 58.222 MH/s, Total shares: 1 Rejected: 0, Time: 01:05
+2021-03-09 11:08:41: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:08:41: [Statistics] Ethereum - Total speed: 58.349 MH/s, Total shares: 1 Rejected: 0, Time: 01:06
+2021-03-09 11:08:41: [Statistics] GPU0 t=43°C fan 30% power 121.00W. Total power: 121.00W
+2021-03-09 11:08:43: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:08:43: [Statistics] Ethereum - Total speed: 58.448 MH/s, Total shares: 1 Rejected: 0, Time: 01:08
+2021-03-09 11:08:43: [Statistics] Ethereum last 10 min - Total: 55.161 MH/s.
+2021-03-09 11:08:46: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:08:46: [Statistics] Ethereum - Total speed: 58.559 MH/s, Total shares: 1 Rejected: 0, Time: 01:11
+2021-03-09 11:08:46: [Statistics] GPU0 t=44°C fan 30% power 120.55W. Total power: 120.55W
+2021-03-09 11:08:49: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:08:49: [Statistics] Ethereum - Total speed: 58.659 MH/s, Total shares: 1 Rejected: 0, Time: 01:14
+2021-03-09 11:08:52: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:08:52: [Statistics] Ethereum - Total speed: 58.749 MH/s, Total shares: 1 Rejected: 0, Time: 01:17
+2021-03-09 11:08:52: [Statistics] GPU0 t=44°C fan 30% power 120.76W. Total power: 120.76W
+2021-03-09 11:08:55: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:08:55: [Statistics] Ethereum - Total speed: 58.824 MH/s, Total shares: 1 Rejected: 0, Time: 01:20
+2021-03-09 11:08:55: [Statistics] Ethereum last 10 min - Total: 55.765 MH/s.
+2021-03-09 11:08:58: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:08:58: [Statistics] Ethereum - Total speed: 58.896 MH/s, Total shares: 1 Rejected: 0, Time: 01:23
+2021-03-09 11:08:58: [Statistics] GPU0 t=44°C fan 30% power 120.69W. Total power: 120.69W
+2021-03-09 11:08:58: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:08:58: [Statistics] Ethereum - Total speed: 58.964 MH/s, Total shares: 1 Rejected: 0, Time: 01:23
+2021-03-09 11:08:58: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:08:58: [Statistics] Ethereum - Total speed: 58.872 MH/s, Total shares: 1 Rejected: 0, Time: 01:23
+2021-03-09 11:08:58: [Statistics] GPU0 t=45°C fan 30% power 120.71W. Total power: 120.71W
+2021-03-09 11:09:00: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:09:00: [Statistics] Ethereum - Total speed: 58.846 MH/s, Total shares: 1 Rejected: 0, Time: 01:25
+2021-03-09 11:09:00: [Statistics] Ethereum last 10 min - Total: 55.985 MH/s.
+2021-03-09 11:09:00: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:09:00: [Statistics] Ethereum - Total speed: 58.923 MH/s, Total shares: 1 Rejected: 0, Time: 01:25
+2021-03-09 11:09:00: [Statistics] GPU0 t=45°C fan 30% power 120.76W. Total power: 120.76W
+2021-03-09 11:09:01: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:09:01: [Statistics] Ethereum - Total speed: 58.967 MH/s, Total shares: 1 Rejected: 0, Time: 01:26
+2021-03-09 11:09:03: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:09:03: [Statistics] Ethereum - Total speed: 59.003 MH/s, Total shares: 1 Rejected: 0, Time: 01:28
+2021-03-09 11:09:03: [Statistics] GPU0 t=45°C fan 30% power 120.82W. Total power: 120.82W
+2021-03-09 11:09:06: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:09:06: [Statistics] Ethereum - Total speed: 59.062 MH/s, Total shares: 1 Rejected: 0, Time: 01:31
+2021-03-09 11:09:06: [Statistics] Ethereum last 10 min - Total: 56.213 MH/s.
+2021-03-09 11:09:09: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:09:09: [Statistics] Ethereum - Total speed: 59.121 MH/s, Total shares: 1 Rejected: 0, Time: 01:34
+2021-03-09 11:09:09: [Statistics] GPU0 t=45°C fan 30% power 120.77W. Total power: 120.77W
+2021-03-09 11:09:12: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:09:12: [Statistics] Ethereum - Total speed: 59.170 MH/s, Total shares: 1 Rejected: 0, Time: 01:37
+2021-03-09 11:09:13: <info>  [Ethash] ~~~~~~ DevFee begin ~~~~~~
+2021-03-09 11:09:14: <info>  New job from commission host
+2021-03-09 11:09:14: [Statistics] Ethereum - Total speed: 59.216 MH/s, Total shares: 1 Rejected: 0, Time: 01:39
+2021-03-09 11:09:14: [Statistics] GPU0 t=45°C fan 30% power 120.78W. Total power: 120.78W
+2021-03-09 11:09:14: <info>  New job from commission host
+2021-03-09 11:09:14: [Statistics] Ethereum - Total speed: 59.216 MH/s, Total shares: 1 Rejected: 0, Time: 01:39
+2021-03-09 11:09:14: [Statistics] Ethereum last 10 min - Total: 56.468 MH/s.
+2021-03-09 11:09:14: <info>  New job from commission host
+2021-03-09 11:09:14: [Statistics] Ethereum - Total speed: 59.237 MH/s, Total shares: 1 Rejected: 0, Time: 01:39
+2021-03-09 11:09:14: [Statistics] GPU0 t=45°C fan 30% power 120.71W. Total power: 120.71W
+2021-03-09 11:09:14: <info>  New job from commission host
+2021-03-09 11:09:14: [Statistics] Ethereum - Total speed: 59.228 MH/s, Total shares: 1 Rejected: 0, Time: 01:40
+2021-03-09 11:09:18: <info>  New job from commission host
+2021-03-09 11:09:18: [Statistics] Ethereum - Total speed: 59.208 MH/s, Total shares: 1 Rejected: 0, Time: 01:43
+2021-03-09 11:09:18: [Statistics] GPU0 t=45°C fan 30% power 121.03W. Total power: 121.03W
+2021-03-09 11:09:20: <info>  New job from commission host
+2021-03-09 11:09:20: [Statistics] Ethereum - Total speed: 59.249 MH/s, Total shares: 1 Rejected: 0, Time: 01:45
+2021-03-09 11:09:20: [Statistics] Ethereum last 10 min - Total: 56.657 MH/s.
+2021-03-09 11:09:23: <info>  New job from commission host
+2021-03-09 11:09:23: [Statistics] Ethereum - Total speed: 59.284 MH/s, Total shares: 1 Rejected: 0, Time: 01:48
+2021-03-09 11:09:23: [Statistics] GPU0 t=46°C fan 30% power 120.83W. Total power: 120.83W
+2021-03-09 11:09:26: <info>  New job from commission host
+2021-03-09 11:09:26: [Statistics] Ethereum - Total speed: 59.320 MH/s, Total shares: 1 Rejected: 0, Time: 01:51
+2021-03-09 11:09:29: <info>  New job from commission host
+2021-03-09 11:09:29: [Statistics] Ethereum - Total speed: 59.349 MH/s, Total shares: 1 Rejected: 0, Time: 01:54
+2021-03-09 11:09:29: [Statistics] GPU0 t=46°C fan 30% power 120.85W. Total power: 120.85W
+2021-03-09 11:09:32: <info>  New job from commission host
+2021-03-09 11:09:32: [Statistics] Ethereum - Total speed: 59.374 MH/s, Total shares: 1 Rejected: 0, Time: 01:57
+2021-03-09 11:09:32: [Statistics] Ethereum last 10 min - Total: 56.956 MH/s.
+2021-03-09 11:09:35: <info>  New job from commission host
+2021-03-09 11:09:35: [Statistics] Ethereum - Total speed: 59.397 MH/s, Total shares: 1 Rejected: 0, Time: 02:00
+2021-03-09 11:09:35: [Statistics] GPU0 t=46°C fan 30% power 120.91W. Total power: 120.91W
+2021-03-09 11:09:37: <info>  New job from commission host
+2021-03-09 11:09:37: [Statistics] Ethereum - Total speed: 59.415 MH/s, Total shares: 1 Rejected: 0, Time: 02:02
+2021-03-09 11:09:38: <info>  New job from commission host
+2021-03-09 11:09:38: [Statistics] Ethereum - Total speed: 59.431 MH/s, Total shares: 1 Rejected: 0, Time: 02:03
+2021-03-09 11:09:38: [Statistics] GPU0 t=46°C fan 30% power 120.89W. Total power: 120.89W
+2021-03-09 11:09:40: <info>  New job from commission host
+2021-03-09 11:09:40: [Statistics] Ethereum - Total speed: 59.413 MH/s, Total shares: 1 Rejected: 0, Time: 02:05
+2021-03-09 11:09:40: [Statistics] Ethereum last 10 min - Total: 57.124 MH/s.
+2021-03-09 11:09:43: <info>  New job from commission host
+2021-03-09 11:09:43: [Statistics] Ethereum - Total speed: 59.425 MH/s, Total shares: 1 Rejected: 0, Time: 02:08
+2021-03-09 11:09:43: [Statistics] GPU0 t=46°C fan 30% power 120.75W. Total power: 120.75W
+2021-03-09 11:09:46: <info>  New job from commission host
+2021-03-09 11:09:46: [Statistics] Ethereum - Total speed: 59.442 MH/s, Total shares: 1 Rejected: 0, Time: 02:12
+2021-03-09 11:09:49: <info>  New job from commission host
+2021-03-09 11:09:49: [Statistics] Ethereum - Total speed: 59.462 MH/s, Total shares: 1 Rejected: 0, Time: 02:14
+2021-03-09 11:09:49: [Statistics] GPU0 t=47°C fan 30% power 120.95W. Total power: 120.95W
+2021-03-09 11:09:52: <info>  New job from commission host
+2021-03-09 11:09:52: [Statistics] Ethereum - Total speed: 59.468 MH/s, Total shares: 1 Rejected: 0, Time: 02:17
+2021-03-09 11:09:52: [Statistics] Ethereum last 10 min - Total: 57.345 MH/s.
+2021-03-09 11:09:55: <info>  New job from commission host
+2021-03-09 11:09:55: [Statistics] Ethereum - Total speed: 59.485 MH/s, Total shares: 1 Rejected: 0, Time: 02:20
+2021-03-09 11:09:55: [Statistics] GPU0 t=47°C fan 30% power 120.81W. Total power: 120.81W
+2021-03-09 11:09:58: <info>  New job from commission host
+2021-03-09 11:09:58: [Statistics] Ethereum - Total speed: 59.498 MH/s, Total shares: 1 Rejected: 0, Time: 02:23
+2021-03-09 11:10:01: <info>  New job from commission host
+2021-03-09 11:10:01: [Statistics] Ethereum - Total speed: 59.503 MH/s, Total shares: 1 Rejected: 0, Time: 02:26
+2021-03-09 11:10:01: [Statistics] GPU0 t=47°C fan 30% power 120.94W. Total power: 120.94W
+2021-03-09 11:10:02: <info>  New job from commission host
+2021-03-09 11:10:02: [Statistics] Ethereum - Total speed: 59.505 MH/s, Total shares: 1 Rejected: 0, Time: 02:27
+2021-03-09 11:10:02: [Statistics] Ethereum last 10 min - Total: 57.500 MH/s.
+2021-03-09 11:10:02: <info>  New job from commission host
+2021-03-09 11:10:02: [Statistics] Ethereum - Total speed: 59.501 MH/s, Total shares: 1 Rejected: 0, Time: 02:28
+2021-03-09 11:10:02: [Statistics] GPU0 t=47°C fan 30% power 120.90W. Total power: 120.90W
+2021-03-09 11:10:05: <info>  New job from commission host
+2021-03-09 11:10:05: [Statistics] Ethereum - Total speed: 59.482 MH/s, Total shares: 1 Rejected: 0, Time: 02:30
+2021-03-09 11:10:07: <info>  New job from commission host
+2021-03-09 11:10:07: [Statistics] Ethereum - Total speed: 59.488 MH/s, Total shares: 1 Rejected: 0, Time: 02:32
+2021-03-09 11:10:07: [Statistics] GPU0 t=47°C fan 30% power 120.78W. Total power: 120.78W
+2021-03-09 11:10:07: <info>  New job from commission host
+2021-03-09 11:10:07: [Statistics] Ethereum - Total speed: 59.488 MH/s, Total shares: 1 Rejected: 0, Time: 02:32
+2021-03-09 11:10:07: [Statistics] Ethereum last 10 min - Total: 57.567 MH/s.
+2021-03-09 11:10:10: <info>  New job from commission host
+2021-03-09 11:10:10: [Statistics] Ethereum - Total speed: 59.479 MH/s, Total shares: 1 Rejected: 0, Time: 02:35
+2021-03-09 11:10:10: [Statistics] GPU0 t=47°C fan 30% power 120.87W. Total power: 120.87W
+2021-03-09 11:10:13: <info>  New job from commission host
+2021-03-09 11:10:13: [Statistics] Ethereum - Total speed: 59.493 MH/s, Total shares: 1 Rejected: 0, Time: 02:38
+2021-03-09 11:10:16: <info>  New job from commission host
+2021-03-09 11:10:16: [Statistics] Ethereum - Total speed: 59.500 MH/s, Total shares: 1 Rejected: 0, Time: 02:41
+2021-03-09 11:10:16: [Statistics] GPU0 t=47°C fan 30% power 120.87W. Total power: 120.87W
+2021-03-09 11:10:19: <info>  New job from commission host
+2021-03-09 11:10:19: [Statistics] Ethereum - Total speed: 59.506 MH/s, Total shares: 1 Rejected: 0, Time: 02:44
+2021-03-09 11:10:19: [Statistics] Ethereum last 10 min - Total: 57.718 MH/s.
+2021-03-09 11:10:22: <info>  New job from commission host
+2021-03-09 11:10:22: [Statistics] Ethereum - Total speed: 59.512 MH/s, Total shares: 1 Rejected: 0, Time: 02:47
+2021-03-09 11:10:22: [Statistics] GPU0 t=47°C fan 30% power 120.78W. Total power: 120.78W
+2021-03-09 11:10:25: <info>  New job from commission host
+2021-03-09 11:10:25: [Statistics] Ethereum - Total speed: 59.520 MH/s, Total shares: 1 Rejected: 0, Time: 02:50
+2021-03-09 11:10:26: <info>  [Ethash] ~~~~~~ DevFee end ~~~~~~
+2021-03-09 11:10:26: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:10:26: [Statistics] Ethereum - Total speed: 59.523 MH/s, Total shares: 1 Rejected: 0, Time: 02:52
+2021-03-09 11:10:26: [Statistics] GPU0 t=47°C fan 30% power 120.41W. Total power: 120.41W
+2021-03-09 11:10:27: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:10:27: [Statistics] Ethereum - Total speed: 59.523 MH/s, Total shares: 1 Rejected: 0, Time: 02:52
+2021-03-09 11:10:27: [Statistics] Ethereum last 10 min - Total: 57.805 MH/s.
+2021-03-09 11:10:28: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:10:28: [Statistics] Ethereum - Total speed: 59.514 MH/s, Total shares: 1 Rejected: 0, Time: 02:53
+2021-03-09 11:10:28: [Statistics] GPU0 t=47°C fan 30% power 120.82W. Total power: 120.82W
+2021-03-09 11:10:30: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:10:30: [Statistics] Ethereum - Total speed: 59.482 MH/s, Total shares: 1 Rejected: 0, Time: 02:55
+2021-03-09 11:10:31: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:10:31: [Statistics] Ethereum - Total speed: 59.495 MH/s, Total shares: 1 Rejected: 0, Time: 02:57
+2021-03-09 11:10:31: [Statistics] GPU0 t=48°C fan 30% power 120.94W. Total power: 120.94W
+2021-03-09 11:10:32: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:10:32: [Statistics] Ethereum - Total speed: 59.492 MH/s, Total shares: 1 Rejected: 0, Time: 02:57
+2021-03-09 11:10:32: [Statistics] Ethereum last 10 min - Total: 57.861 MH/s.
+2021-03-09 11:10:33: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:10:33: [Statistics] Ethereum - Total speed: 59.480 MH/s, Total shares: 1 Rejected: 0, Time: 02:58
+2021-03-09 11:10:33: [Statistics] GPU0 t=48°C fan 30% power 120.69W. Total power: 120.69W
+2021-03-09 11:10:35: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:10:35: [Statistics] Ethereum - Total speed: 59.474 MH/s, Total shares: 1 Rejected: 0, Time: 03:00
+2021-03-09 11:10:38: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:10:38: [Statistics] Ethereum - Total speed: 59.475 MH/s, Total shares: 1 Rejected: 0, Time: 03:03
+2021-03-09 11:10:38: [Statistics] GPU0 t=48°C fan 30% power 120.72W. Total power: 120.72W
+2021-03-09 11:10:41: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:10:41: [Statistics] Ethereum - Total speed: 59.482 MH/s, Total shares: 1 Rejected: 0, Time: 03:07
+2021-03-09 11:10:41: [Statistics] Ethereum last 10 min - Total: 57.946 MH/s.
+2021-03-09 11:10:44: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:10:44: [Statistics] Ethereum - Total speed: 59.494 MH/s, Total shares: 1 Rejected: 0, Time: 03:09
+2021-03-09 11:10:44: [Statistics] GPU0 t=48°C fan 30% power 121.09W. Total power: 121.09W
+2021-03-09 11:10:47: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:10:47: [Statistics] Ethereum - Total speed: 59.504 MH/s, Total shares: 1 Rejected: 0, Time: 03:12
+2021-03-09 11:10:50: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:10:50: [Statistics] Ethereum - Total speed: 59.512 MH/s, Total shares: 1 Rejected: 0, Time: 03:15
+2021-03-09 11:10:50: [Statistics] GPU0 t=48°C fan 30% power 120.70W. Total power: 120.70W
+2021-03-09 11:10:51: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:10:51: [Statistics] Ethereum - Total speed: 59.518 MH/s, Total shares: 1 Rejected: 0, Time: 03:16
+2021-03-09 11:10:51: [Statistics] Ethereum last 10 min - Total: 58.025 MH/s.
+2021-03-09 11:10:51: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:10:51: [Statistics] Ethereum - Total speed: 59.483 MH/s, Total shares: 1 Rejected: 0, Time: 03:16
+2021-03-09 11:10:51: [Statistics] GPU0 t=48°C fan 30% power 120.72W. Total power: 120.72W
+2021-03-09 11:10:54: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:10:54: [Statistics] Ethereum - Total speed: 59.432 MH/s, Total shares: 1 Rejected: 0, Time: 03:20
+2021-03-09 11:10:57: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:10:57: [Statistics] Ethereum - Total speed: 59.393 MH/s, Total shares: 1 Rejected: 0, Time: 03:22
+2021-03-09 11:10:57: [Statistics] GPU0 t=48°C fan 30% power 120.33W. Total power: 120.33W
+2021-03-09 11:10:57: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:10:57: [Statistics] Ethereum - Total speed: 59.230 MH/s, Total shares: 1 Rejected: 0, Time: 03:23
+2021-03-09 11:10:57: [Statistics] Ethereum last 10 min - Total: 58.074 MH/s.
+2021-03-09 11:10:58: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:10:58: [Statistics] Ethereum - Total speed: 59.089 MH/s, Total shares: 1 Rejected: 0, Time: 03:23
+2021-03-09 11:10:58: [Statistics] GPU0 t=48°C fan 30% power 120.77W. Total power: 120.77W
+2021-03-09 11:11:01: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:11:01: [Statistics] Ethereum - Total speed: 59.004 MH/s, Total shares: 1 Rejected: 0, Time: 03:26
+2021-03-09 11:11:04: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:11:04: [Statistics] Ethereum - Total speed: 59.084 MH/s, Total shares: 1 Rejected: 0, Time: 03:29
+2021-03-09 11:11:04: [Statistics] GPU0 t=48°C fan 30% power 120.87W. Total power: 120.87W
+2021-03-09 11:11:05: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:11:05: [Statistics] Ethereum - Total speed: 59.185 MH/s, Total shares: 1 Rejected: 0, Time: 03:30
+2021-03-09 11:11:05: [Statistics] Ethereum last 10 min - Total: 58.112 MH/s.
+2021-03-09 11:11:05: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:11:05: [Statistics] Ethereum - Total speed: 59.224 MH/s, Total shares: 1 Rejected: 0, Time: 03:31
+2021-03-09 11:11:05: [Statistics] GPU0 t=48°C fan 30% power 119.97W. Total power: 119.97W
+2021-03-09 11:11:08: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:11:08: [Statistics] Ethereum - Total speed: 59.262 MH/s, Total shares: 1 Rejected: 0, Time: 03:33
+2021-03-09 11:11:11: <info>  New job from eth-eu2.nanopool.org:9433
+2021-03-09 11:11:11: [Statistics] Ethereum - Total speed: 59.318 MH/s, Total shares: 1 Rejected: 0, Time: 03:36
+2021-03-09 11:11:11: [Statistics] GPU0 t=48°C fan 30% power 120.47W. Total power: 120.47W
+2021-03-09 11:11:12: <info>  Terminating, please wait ...
