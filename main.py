@@ -2,7 +2,7 @@ import os
 
 nanominerlogspath = r"C:\Users\Ferris\Desktop\Mining Logs\nanominer\Bis April 2021"
 nanominerBigLogBeforeAprilPath = r"C:\Users\Ferris\Desktop\Mining Logs\nanominer_biglog_before_April.log"
-nanominerNewLogPath = r"C:\Users\Ferris\Desktop\Mining Logs\nanominer_new_splitted_before_april"
+nanomineSubLogPath = r"C:\Users\Ferris\Desktop\Mining Logs\nanominer_new_splitted_before_april"
 
 # der anfang der zeile mit diesem inhalt stellt den anfang eines mining logs dar
 nanominer_log_seperator = "                                    _                 "
@@ -54,7 +54,7 @@ def split_big_log_into_pieces(bigLog: str):
         next_split_index = get_index_of_new_line_before_given_index(bigLog, next_separator_index)
         assert next_split_index != -1
         sub_log = bigLog[recent_split_index + 1:next_split_index]  # to prevent an empty line at new sublog
-        sub_log_path = os.path.join(nanominerNewLogPath, f"sublog_{count}_{sub_log[:20].replace(':', '.').strip()}.log")
+        sub_log_path = os.path.join(nanomineSubLogPath, f"sublog_{count}_{sub_log[:20].replace(':', '.').strip()}.log")
         with open(sub_log_path, "w") as subLogFile:
             subLogFile.write(sub_log)
         print(f"Created {sub_log_path}\n")
@@ -66,11 +66,33 @@ def split_big_log_into_pieces(bigLog: str):
 
     # handle last log
     sub_log = bigLog[recent_split_index:]
-    sub_log_path = os.path.join(nanominerNewLogPath, f"sublog_{count}_{sub_log[:20].replace(':', '.').strip()}.log")
+    sub_log_path = os.path.join(nanomineSubLogPath, f"sublog_{count}_{sub_log[:20].replace(':', '.').strip()}.log")
     with open(sub_log_path, "w") as subLogFile:
         subLogFile.write(sub_log)
 
-    print(f"Created {sub_log_path}\n")
+    print(f"Created {sub_log_path}")
+
+
+def check_sublogs_are_valid():
+    logfiles = os.listdir(nanominerlogspath)
+    count = 0
+    for file in logfiles:
+        count += 1
+        singleLogFilePath = os.path.join(nanomineSubLogPath, file)
+        with open(singleLogFilePath, "r") as logFile:
+            logFileText = logFile.read()
+
+        accepted, rejected = 0
+        for line in logFileText.splitlines(keepends=False):
+            if line.find("Total shares:") != -1:
+                #  2021-02-13 14:12:14: [Statistics] Ethereum - Total speed: 56.586 MH/s, Total shares: 0 Rejected: 0, Time: 00:32
+                total_split = line.split("Total shares: ")
+                total_shares = int(total_split[1][0])
+                rejected_split = total_split[1].split("Rejected: ")
+                rejected_shares = int(rejected_split[1][0])
+
+
+    print(f"Found {count} logfiles\n")
 
 
 # bigLog = getNanoMinerBigLog()
