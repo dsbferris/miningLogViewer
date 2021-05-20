@@ -31,7 +31,7 @@ def get_nanominer():
         if os.path.exists(nanominer_log_path):
             nanominer_total_seconds = nlv.get_total_seconds(nanominer_log_path)
             print_statistics(nanominer_total_seconds, wattage, price)
-            # olv.find_possible_errors(log_path, "RTX 3070")
+            nlv.find_possible_errors(nanominer_log_path, "8192 MB available")
             print("\n")
         else:
             print(f"log_path does not exists: \n{nanominer_log_path}")
@@ -56,6 +56,18 @@ def get_phoenix_miner():
             print(f"log_path does not exists: \n{phoenix_log_path}")
 
 
+def get_nanominer_levin():
+    wattage = 170
+    price = 0.3
+    nanominer_log_path = r"logs/original_logs/levin_nanominer_logs/logs"
+    if os.path.exists(nanominer_log_path):
+        nanominer_total_seconds = nlv.get_total_seconds(nanominer_log_path)
+        print_statistics(nanominer_total_seconds, wattage, price)
+        nlv.find_possible_errors(nanominer_log_path, "8192 MB available")
+        print("\n")
+    else:
+        print(f"log_path does not exists: \n{nanominer_log_path}")
+
 
 def main():
     print("Nanominer:")
@@ -65,4 +77,5 @@ def main():
     get_phoenix_miner()
 
 
-main()
+# main()
+get_nanominer_levin()

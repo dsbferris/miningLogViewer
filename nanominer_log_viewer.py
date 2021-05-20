@@ -76,17 +76,16 @@ def read_seconds_from_line(time: str):
 # Splits big_log into pieces and reads the last written time and sums up into seconds
 def read_total_seconds_from_big_log(big_log: str):
     # split_separator = "wallet"
-    split_separator = "RTX 3070"
+    split_separator = "8192 MB available"
     parts = big_log.split(split_separator)[1:]
     total_secs = 0
+    part_index = 0
     for part in parts:
-
+        part_index += 1
         index = part.rfind("Time:")
-
-        try:
-            assert index != -1
-        except AssertionError:
-            print(f"Error in part:\n{part}")
+        if index == -1:
+            print(f"No time found in :\n{parts[part_index]}")
+            continue
 
         new_line = part.find("\n", index)
         time = part[index:new_line]  # e.g. for time: (Time: )04:02:01(\n)

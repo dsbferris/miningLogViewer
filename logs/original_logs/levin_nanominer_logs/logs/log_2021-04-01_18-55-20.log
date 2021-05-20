@@ -41,43 +41,6 @@
 2021-04-01 18:55:21: <info> GPU watchdog is enabled
 2021-04-01 18:55:21: <info> Never calling reboot.bat (always restarting the miner in case of errors). 
 2021-04-01 18:55:21: <info>  Setting up algorithm: Ethash
-2021-04-01 18:55:21: <info> Single device detected
-2021-04-01 18:55:21: <info> GPU 0 PCI 0a:00.0, Platform: CUDA, Name: GeForce RTX 3060 Ti, 8192 MB available
-2021-04-01 18:55:21: <info> -------------------Ethash:------------------
-2021-04-01 18:55:21: <info> Currency: Ethereum
-2021-04-01 18:55:21: <info> Wallet: wallet
-2021-04-01 18:55:21: <info> Rig name: levin
-2021-04-01 18:55:21: <info> Email: levinkueck08@gmail.com
-2021-04-01 18:55:21: <info> Hashrate threshold to restart miner is not set
-2021-04-01 18:55:21: <info> Added pool: eth-eu2.nanopool.org:9433
-2021-04-01 18:55:21: <info> Added pool: eth-eu1.nanopool.org:9433
-2021-04-01 18:55:21: <info> Added pool: eth-us-east1.nanopool.org:9433
-2021-04-01 18:55:21: <info> Added pool: eth-us-west1.nanopool.org:9433
-2021-04-01 18:55:21: <info> Added pool: eth-asia1.nanopool.org:9433
-2021-04-01 18:55:21: <info> Added pool: eth-jp1.nanopool.org:9433
-2021-04-01 18:55:21: <info> Added pool: eth-au1.nanopool.org:9433
-2021-04-01 18:55:21: <info> Auto pool sorting is enabled
-2021-04-01 18:55:21: <info> Using all GPU devices
-2021-04-01 18:55:21: <info> Memory tweak: 1
-2021-04-01 18:55:21: <info> -------------Common parameters:-------------
-2021-04-01 18:55:21: <info> Log path: ./logs/
-2021-04-01 18:55:21: <info> Log is written to file
-2021-04-01 18:55:21: <info> GPU watchdog is enabled
-2021-04-01 18:55:21: <info> Never calling reboot.bat (always restarting the miner in case of errors). 
-2021-04-01 18:55:21: <info>  Setting up algorithm: Ethash
-2021-04-01 18:55:21: <info>  Connecting to pools...
-2021-04-01 18:55:21: <info> Version 3.3.3 of the miner is available. Changelog:
-2021-04-01 18:55:21: <info> 
-* Faster dataset creation for Ergo (autolykos2 algorithm);
-* Added zombie mode for Ergo on 2 Gb GPUs both Nvidia and AMD;
-* Fixed issues with shardpool (Zilliqa).
-
-2021-04-01 18:55:21: <info> In order to process the update, specify  autoUpdate=true  in config and restart the miner.
-2021-04-01 18:55:21: <info> Version 3.3.3 of the miner is available. Changelog:
-2021-04-01 18:55:21: <info> 
-* Faster dataset creation for Ergo (autolykos2 algorithm);
-* Added zombie mode for Ergo on 2 Gb GPUs both Nvidia and AMD;
-* Fixed issues with shardpool (Zilliqa).
 
 2021-04-01 18:55:21: <info> In order to process the update, specify  autoUpdate=true  in config and restart the miner.
 2021-04-01 18:55:21: <info>  Connected to pool: eth-eu2.nanopool.org:9433 | IP: 151.80.144.188 | ping: 134 ms.

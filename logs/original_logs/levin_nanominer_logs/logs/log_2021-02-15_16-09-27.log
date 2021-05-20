@@ -1,0 +1,311 @@
+2021-02-15 16:09:27: <info>                                    _                 
+2021-02-15 16:09:27: <info>  _ __   __ _ _ __   ___  _ __ ___ (_)_ __   ___ _ __ 
+2021-02-15 16:09:27: <info> | '_ \ / _` | '_ \ / _ \| '_ ` _ \| | '_ \ / _ \ '__|
+2021-02-15 16:09:27: <info> | | | | (_| | | | | (_) | | | | | | | | | |  __/ |   
+2021-02-15 16:09:27: <info> |_| |_|\__,_|_| |_|\___/|_| |_| |_|_|_| |_|\___|_|   
+2021-02-15 16:09:27: <info> 
+2021-02-15 16:09:27: <info> Version 3.2.2-cuda11
+2021-02-15 16:09:27: <info>  Started EthMan server on port 3333 without a password (read-only mode).
+2021-02-15 16:09:27: <info>  Started web interface on port 9090 without a password.
+2021-02-15 16:09:27: <info>  CUDA driver version is 11.2, runtime version is 11.1
+2021-02-15 16:09:27: <warning>  Failed to initialize nvml library.
+2021-02-15 16:09:27: <info> Single device detected
+2021-02-15 16:09:27: <info> GPU 0 PCI 0a:00.0, Platform: CUDA, Name: GeForce RTX 3060 Ti, 8192 MB available
+2021-02-15 16:09:27: <info> -------------------Ethash:------------------
+2021-02-15 16:09:27: <info> Currency: Ethereum
+2021-02-15 16:09:27: <info> Wallet: wallet
+2021-02-15 16:09:27: <info> Rig name: levin
+2021-02-15 16:09:27: <info> Email was not set.
+2021-02-15 16:09:27: <info> Hashrate threshold to restart miner is not set
+2021-02-15 16:09:27: <info> Added pool: eth-eu2.nanopool.org:9433
+2021-02-15 16:09:27: <info> Added pool: eth-eu1.nanopool.org:9433
+2021-02-15 16:09:27: <info> Added pool: eth-us-east1.nanopool.org:9433
+2021-02-15 16:09:27: <info> Added pool: eth-asia1.nanopool.org:9433
+2021-02-15 16:09:27: <info> Added pool: eth-jp1.nanopool.org:9433
+2021-02-15 16:09:27: <info> Added pool: eth-us-west1.nanopool.org:9433
+2021-02-15 16:09:27: <info> Added pool: eth-au1.nanopool.org:9433
+2021-02-15 16:09:27: <info> Auto pool sorting is enabled
+2021-02-15 16:09:27: <info> Using all GPU devices
+2021-02-15 16:09:27: <info> Memory tweak: 1
+2021-02-15 16:09:27: <info> -------------Common parameters:-------------
+2021-02-15 16:09:27: <info> Log path: ./logs/
+2021-02-15 16:09:27: <info> Log is written to file
+2021-02-15 16:09:27: <info> GPU watchdog is enabled
+2021-02-15 16:09:27: <info> Never calling reboot.bat (always restarting the miner in case of errors). 
+2021-02-15 16:09:27: <info>  Setting up algorithm: Ethash
+2021-02-15 16:09:28: <info>  Connecting to pools...
+2021-02-15 16:09:28: <info>  Connected to pool: eth-eu2.nanopool.org:9433 | IP: 149.202.42.174 | ping: 95 ms.
+2021-02-15 16:09:28: <info>  New job from eth-eu2.nanopool.org:9433 | share difficulty = 10000 MH, epoch 395 (4183 MB)
+2021-02-15 16:09:28: [Statistics] Ethereum - Total speed: 0.000 H/s, Total shares: 0 Rejected: 0, Time: 00:01
+2021-02-15 16:09:28: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:09:28: [Statistics] Ethereum - Total speed: 0.000 H/s, Total shares: 0 Rejected: 0, Time: 00:01
+2021-02-15 16:09:28: [Statistics] Ethereum last 10 min - Total: 0.000 H/s.
+2021-02-15 16:09:29: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:09:29: [Statistics] Ethereum - Total speed: 0.000 H/s, Total shares: 0 Rejected: 0, Time: 00:02
+2021-02-15 16:09:32: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:09:32: [Statistics] Ethereum - Total speed: 0.000 H/s, Total shares: 0 Rejected: 0, Time: 00:05
+2021-02-15 16:09:34: <info>  GPU0: 4183 MB DAG generated in 3.74 seconds
+2021-02-15 16:09:35: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:09:35: [Statistics] Ethereum - Total speed: 53.996 MH/s, Total shares: 0 Rejected: 0, Time: 00:07
+2021-02-15 16:09:36: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:09:36: [Statistics] Ethereum - Total speed: 53.931 MH/s, Total shares: 0 Rejected: 0, Time: 00:08
+2021-02-15 16:09:36: [Statistics] Ethereum last 10 min - Total: 53.964 MH/s.
+2021-02-15 16:09:38: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:09:38: [Statistics] Ethereum - Total speed: 53.947 MH/s, Total shares: 0 Rejected: 0, Time: 00:11
+2021-02-15 16:09:38: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:09:38: [Statistics] Ethereum - Total speed: 53.947 MH/s, Total shares: 0 Rejected: 0, Time: 00:11
+2021-02-15 16:09:38: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:09:38: [Statistics] Ethereum - Total speed: 53.768 MH/s, Total shares: 0 Rejected: 0, Time: 00:11
+2021-02-15 16:09:41: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:09:41: [Statistics] Ethereum - Total speed: 53.805 MH/s, Total shares: 0 Rejected: 0, Time: 00:14
+2021-02-15 16:09:41: [Statistics] Ethereum last 10 min - Total: 53.872 MH/s.
+2021-02-15 16:09:43: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:09:43: [Statistics] Ethereum - Total speed: 53.857 MH/s, Total shares: 0 Rejected: 0, Time: 00:15
+2021-02-15 16:09:43: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:09:43: [Statistics] Ethereum - Total speed: 53.765 MH/s, Total shares: 0 Rejected: 0, Time: 00:16
+2021-02-15 16:09:46: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:09:46: [Statistics] Ethereum - Total speed: 53.456 MH/s, Total shares: 0 Rejected: 0, Time: 00:19
+2021-02-15 16:09:46: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:09:46: [Statistics] Ethereum - Total speed: 53.456 MH/s, Total shares: 0 Rejected: 0, Time: 00:19
+2021-02-15 16:09:46: [Statistics] Ethereum last 10 min - Total: 53.800 MH/s.
+2021-02-15 16:09:46: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:09:46: [Statistics] Ethereum - Total speed: 53.524 MH/s, Total shares: 0 Rejected: 0, Time: 00:19
+2021-02-15 16:09:46: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:09:46: [Statistics] Ethereum - Total speed: 53.392 MH/s, Total shares: 0 Rejected: 0, Time: 00:19
+2021-02-15 16:09:46: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:09:46: [Statistics] Ethereum - Total speed: 53.483 MH/s, Total shares: 0 Rejected: 0, Time: 00:19
+2021-02-15 16:09:49: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:09:49: [Statistics] Ethereum - Total speed: 53.540 MH/s, Total shares: 0 Rejected: 0, Time: 00:22
+2021-02-15 16:09:49: [Statistics] Ethereum last 10 min - Total: 53.736 MH/s.
+2021-02-15 16:09:52: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:09:52: [Statistics] Ethereum - Total speed: 53.436 MH/s, Total shares: 0 Rejected: 0, Time: 00:25
+2021-02-15 16:09:55: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:09:55: [Statistics] Ethereum - Total speed: 53.515 MH/s, Total shares: 0 Rejected: 0, Time: 00:28
+2021-02-15 16:09:56: <info>  Ethereum - SHARE FOUND (GPU: 0, nonce: 0xddc3c581148cced2).
+2021-02-15 16:09:56: <info> Ethereum: share accepted (62 ms)!
+2021-02-15 16:09:58: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:09:58: [Statistics] Ethereum - Total speed: 53.403 MH/s, Total shares: 1 Rejected: 0, Time: 00:31
+2021-02-15 16:10:00: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:10:00: [Statistics] Ethereum - Total speed: 53.323 MH/s, Total shares: 1 Rejected: 0, Time: 00:33
+2021-02-15 16:10:00: [Statistics] Ethereum last 10 min - Total: 53.618 MH/s.
+2021-02-15 16:10:00: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:10:00: [Statistics] Ethereum - Total speed: 53.350 MH/s, Total shares: 1 Rejected: 0, Time: 00:33
+2021-02-15 16:10:03: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:10:03: [Statistics] Ethereum - Total speed: 53.374 MH/s, Total shares: 1 Rejected: 0, Time: 00:36
+2021-02-15 16:10:06: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:10:06: [Statistics] Ethereum - Total speed: 53.265 MH/s, Total shares: 1 Rejected: 0, Time: 00:39
+2021-02-15 16:10:09: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:10:09: [Statistics] Ethereum - Total speed: 53.337 MH/s, Total shares: 1 Rejected: 0, Time: 00:42
+2021-02-15 16:10:09: [Statistics] Ethereum last 10 min - Total: 53.541 MH/s.
+2021-02-15 16:10:12: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:10:12: [Statistics] Ethereum - Total speed: 53.260 MH/s, Total shares: 1 Rejected: 0, Time: 00:45
+2021-02-15 16:10:15: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:10:15: [Statistics] Ethereum - Total speed: 53.330 MH/s, Total shares: 1 Rejected: 0, Time: 00:48
+2021-02-15 16:10:18: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:10:18: [Statistics] Ethereum - Total speed: 53.265 MH/s, Total shares: 1 Rejected: 0, Time: 00:51
+2021-02-15 16:10:21: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:10:21: [Statistics] Ethereum - Total speed: 52.811 MH/s, Total shares: 1 Rejected: 0, Time: 00:54
+2021-02-15 16:10:21: [Statistics] Ethereum last 10 min - Total: 53.462 MH/s.
+2021-02-15 16:10:24: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:10:24: [Statistics] Ethereum - Total speed: 51.828 MH/s, Total shares: 1 Rejected: 0, Time: 00:57
+2021-02-15 16:10:27: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:10:27: [Statistics] Ethereum - Total speed: 51.899 MH/s, Total shares: 1 Rejected: 0, Time: 01:00
+2021-02-15 16:10:30: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:10:30: [Statistics] Ethereum - Total speed: 52.130 MH/s, Total shares: 1 Rejected: 0, Time: 01:03
+2021-02-15 16:10:33: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:10:33: [Statistics] Ethereum - Total speed: 51.951 MH/s, Total shares: 1 Rejected: 0, Time: 01:06
+2021-02-15 16:10:33: [Statistics] Ethereum last 10 min - Total: 53.174 MH/s.
+2021-02-15 16:10:36: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:10:36: [Statistics] Ethereum - Total speed: 51.539 MH/s, Total shares: 1 Rejected: 0, Time: 01:09
+2021-02-15 16:10:37: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:10:37: [Statistics] Ethereum - Total speed: 51.659 MH/s, Total shares: 1 Rejected: 0, Time: 01:10
+2021-02-15 16:10:38: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:10:38: [Statistics] Ethereum - Total speed: 51.873 MH/s, Total shares: 1 Rejected: 0, Time: 01:11
+2021-02-15 16:10:40: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:10:40: [Statistics] Ethereum - Total speed: 51.665 MH/s, Total shares: 1 Rejected: 0, Time: 01:13
+2021-02-15 16:10:40: [Statistics] Ethereum last 10 min - Total: 53.011 MH/s.
+2021-02-15 16:10:43: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:10:43: [Statistics] Ethereum - Total speed: 51.918 MH/s, Total shares: 1 Rejected: 0, Time: 01:16
+2021-02-15 16:10:47: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:10:47: [Statistics] Ethereum - Total speed: 51.753 MH/s, Total shares: 1 Rejected: 0, Time: 01:19
+2021-02-15 16:10:49: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:10:49: [Statistics] Ethereum - Total speed: 51.999 MH/s, Total shares: 1 Rejected: 0, Time: 01:22
+2021-02-15 16:10:50: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:10:50: [Statistics] Ethereum - Total speed: 52.062 MH/s, Total shares: 1 Rejected: 0, Time: 01:23
+2021-02-15 16:10:50: [Statistics] Ethereum last 10 min - Total: 52.858 MH/s.
+2021-02-15 16:10:51: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:10:51: [Statistics] Ethereum - Total speed: 52.267 MH/s, Total shares: 1 Rejected: 0, Time: 01:23
+2021-02-15 16:10:51: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:10:51: [Statistics] Ethereum - Total speed: 52.487 MH/s, Total shares: 1 Rejected: 0, Time: 01:24
+2021-02-15 16:10:51: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:10:51: [Statistics] Ethereum - Total speed: 52.683 MH/s, Total shares: 1 Rejected: 0, Time: 01:24
+2021-02-15 16:10:54: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:10:54: [Statistics] Ethereum - Total speed: 52.733 MH/s, Total shares: 1 Rejected: 0, Time: 01:27
+2021-02-15 16:10:54: [Statistics] Ethereum last 10 min - Total: 52.847 MH/s.
+2021-02-15 16:10:57: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:10:57: [Statistics] Ethereum - Total speed: 52.716 MH/s, Total shares: 1 Rejected: 0, Time: 01:30
+2021-02-15 16:11:00: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:11:00: [Statistics] Ethereum - Total speed: 52.846 MH/s, Total shares: 1 Rejected: 0, Time: 01:33
+2021-02-15 16:11:03: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:11:03: [Statistics] Ethereum - Total speed: 52.836 MH/s, Total shares: 1 Rejected: 0, Time: 01:36
+2021-02-15 16:11:06: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:11:06: [Statistics] Ethereum - Total speed: 52.822 MH/s, Total shares: 1 Rejected: 0, Time: 01:39
+2021-02-15 16:11:06: [Statistics] Ethereum last 10 min - Total: 52.840 MH/s.
+2021-02-15 16:11:08: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:11:08: [Statistics] Ethereum - Total speed: 52.967 MH/s, Total shares: 1 Rejected: 0, Time: 01:40
+2021-02-15 16:11:08: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:11:08: [Statistics] Ethereum - Total speed: 52.969 MH/s, Total shares: 1 Rejected: 0, Time: 01:40
+2021-02-15 16:11:11: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:11:11: [Statistics] Ethereum - Total speed: 52.152 MH/s, Total shares: 1 Rejected: 0, Time: 01:43
+2021-02-15 16:11:14: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:11:14: [Statistics] Ethereum - Total speed: 52.308 MH/s, Total shares: 1 Rejected: 0, Time: 01:47
+2021-02-15 16:11:14: [Statistics] Ethereum last 10 min - Total: 52.813 MH/s.
+2021-02-15 16:11:17: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:11:17: [Statistics] Ethereum - Total speed: 52.282 MH/s, Total shares: 1 Rejected: 0, Time: 01:49
+2021-02-15 16:11:19: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:11:19: [Statistics] Ethereum - Total speed: 52.050 MH/s, Total shares: 1 Rejected: 0, Time: 01:52
+2021-02-15 16:11:19: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:11:19: [Statistics] Ethereum - Total speed: 51.732 MH/s, Total shares: 1 Rejected: 0, Time: 01:52
+2021-02-15 16:11:22: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:11:22: [Statistics] Ethereum - Total speed: 51.570 MH/s, Total shares: 1 Rejected: 0, Time: 01:55
+2021-02-15 16:11:22: [Statistics] Ethereum last 10 min - Total: 52.753 MH/s.
+2021-02-15 16:11:25: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:11:25: [Statistics] Ethereum - Total speed: 51.104 MH/s, Total shares: 1 Rejected: 0, Time: 01:58
+2021-02-15 16:11:28: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:11:28: [Statistics] Ethereum - Total speed: 51.080 MH/s, Total shares: 1 Rejected: 0, Time: 02:01
+2021-02-15 16:11:31: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:11:31: [Statistics] Ethereum - Total speed: 50.973 MH/s, Total shares: 1 Rejected: 0, Time: 02:04
+2021-02-15 16:11:31: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:11:31: [Statistics] Ethereum - Total speed: 51.083 MH/s, Total shares: 1 Rejected: 0, Time: 02:04
+2021-02-15 16:11:31: [Statistics] Ethereum last 10 min - Total: 52.622 MH/s.
+2021-02-15 16:11:32: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:11:32: [Statistics] Ethereum - Total speed: 51.207 MH/s, Total shares: 1 Rejected: 0, Time: 02:04
+2021-02-15 16:11:35: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:11:35: [Statistics] Ethereum - Total speed: 51.030 MH/s, Total shares: 1 Rejected: 0, Time: 02:07
+2021-02-15 16:11:38: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:11:38: [Statistics] Ethereum - Total speed: 51.028 MH/s, Total shares: 1 Rejected: 0, Time: 02:10
+2021-02-15 16:11:41: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:11:41: [Statistics] Ethereum - Total speed: 51.098 MH/s, Total shares: 1 Rejected: 0, Time: 02:14
+2021-02-15 16:11:41: [Statistics] Ethereum last 10 min - Total: 52.505 MH/s.
+2021-02-15 16:11:43: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:11:43: [Statistics] Ethereum - Total speed: 51.087 MH/s, Total shares: 1 Rejected: 0, Time: 02:16
+2021-02-15 16:11:44: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:11:44: [Statistics] Ethereum - Total speed: 51.013 MH/s, Total shares: 1 Rejected: 0, Time: 02:17
+2021-02-15 16:11:47: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:11:47: [Statistics] Ethereum - Total speed: 51.061 MH/s, Total shares: 1 Rejected: 0, Time: 02:20
+2021-02-15 16:11:50: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:11:50: [Statistics] Ethereum - Total speed: 51.166 MH/s, Total shares: 1 Rejected: 0, Time: 02:23
+2021-02-15 16:11:50: [Statistics] Ethereum last 10 min - Total: 52.409 MH/s.
+2021-02-15 16:11:53: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:11:53: [Statistics] Ethereum - Total speed: 51.094 MH/s, Total shares: 1 Rejected: 0, Time: 02:26
+2021-02-15 16:11:54: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:11:54: [Statistics] Ethereum - Total speed: 51.088 MH/s, Total shares: 1 Rejected: 0, Time: 02:27
+2021-02-15 16:11:54: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:11:54: [Statistics] Ethereum - Total speed: 51.205 MH/s, Total shares: 1 Rejected: 0, Time: 02:27
+2021-02-15 16:11:58: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:11:58: [Statistics] Ethereum - Total speed: 51.275 MH/s, Total shares: 1 Rejected: 0, Time: 02:31
+2021-02-15 16:11:58: [Statistics] Ethereum last 10 min - Total: 52.341 MH/s.
+2021-02-15 16:12:00: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:12:00: [Statistics] Ethereum - Total speed: 51.226 MH/s, Total shares: 1 Rejected: 0, Time: 02:33
+2021-02-15 16:12:03: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:12:03: [Statistics] Ethereum - Total speed: 51.310 MH/s, Total shares: 1 Rejected: 0, Time: 02:36
+2021-02-15 16:12:06: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:12:06: [Statistics] Ethereum - Total speed: 51.252 MH/s, Total shares: 1 Rejected: 0, Time: 02:39
+2021-02-15 16:12:09: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:12:09: [Statistics] Ethereum - Total speed: 51.304 MH/s, Total shares: 1 Rejected: 0, Time: 02:42
+2021-02-15 16:12:09: [Statistics] Ethereum last 10 min - Total: 52.266 MH/s.
+2021-02-15 16:12:09: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:12:09: [Statistics] Ethereum - Total speed: 51.098 MH/s, Total shares: 1 Rejected: 0, Time: 02:42
+2021-02-15 16:12:12: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:12:12: [Statistics] Ethereum - Total speed: 51.191 MH/s, Total shares: 1 Rejected: 0, Time: 02:45
+2021-02-15 16:12:14: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:12:14: [Statistics] Ethereum - Total speed: 50.967 MH/s, Total shares: 1 Rejected: 0, Time: 02:47
+2021-02-15 16:12:14: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:12:14: [Statistics] Ethereum - Total speed: 50.684 MH/s, Total shares: 1 Rejected: 0, Time: 02:47
+2021-02-15 16:12:14: [Statistics] Ethereum last 10 min - Total: 52.227 MH/s.
+2021-02-15 16:12:15: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:12:15: [Statistics] Ethereum - Total speed: 50.592 MH/s, Total shares: 1 Rejected: 0, Time: 02:48
+2021-02-15 16:12:15: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:12:15: [Statistics] Ethereum - Total speed: 50.545 MH/s, Total shares: 1 Rejected: 0, Time: 02:48
+2021-02-15 16:12:18: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:12:18: [Statistics] Ethereum - Total speed: 50.248 MH/s, Total shares: 1 Rejected: 0, Time: 02:51
+2021-02-15 16:12:21: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:12:21: [Statistics] Ethereum - Total speed: 50.169 MH/s, Total shares: 1 Rejected: 0, Time: 02:54
+2021-02-15 16:12:21: [Statistics] Ethereum last 10 min - Total: 52.152 MH/s.
+2021-02-15 16:12:24: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:12:47: [Statistics] Ethereum - Total speed: 50.017 MH/s, Total shares: 1 Rejected: 0, Time: 03:20
+2021-02-15 16:12:47: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:12:47: [Statistics] Ethereum - Total speed: 49.929 MH/s, Total shares: 1 Rejected: 0, Time: 03:20
+2021-02-15 16:12:47: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:12:47: [Statistics] Ethereum - Total speed: 49.929 MH/s, Total shares: 1 Rejected: 0, Time: 03:20
+2021-02-15 16:12:47: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:12:47: [Statistics] Ethereum - Total speed: 49.929 MH/s, Total shares: 1 Rejected: 0, Time: 03:20
+2021-02-15 16:12:47: [Statistics] Ethereum last 10 min - Total: 51.869 MH/s.
+2021-02-15 16:12:47: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:12:47: [Statistics] Ethereum - Total speed: 49.929 MH/s, Total shares: 1 Rejected: 0, Time: 03:20
+2021-02-15 16:12:47: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:12:47: [Statistics] Ethereum - Total speed: 49.929 MH/s, Total shares: 1 Rejected: 0, Time: 03:20
+2021-02-15 16:12:47: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:12:47: [Statistics] Ethereum - Total speed: 49.929 MH/s, Total shares: 1 Rejected: 0, Time: 03:20
+2021-02-15 16:12:47: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:12:47: [Statistics] Ethereum - Total speed: 49.929 MH/s, Total shares: 1 Rejected: 0, Time: 03:20
+2021-02-15 16:12:47: [Statistics] Ethereum last 10 min - Total: 51.869 MH/s.
+2021-02-15 16:12:47: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:12:47: [Statistics] Ethereum - Total speed: 49.929 MH/s, Total shares: 1 Rejected: 0, Time: 03:20
+2021-02-15 16:12:47: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:12:47: [Statistics] Ethereum - Total speed: 49.929 MH/s, Total shares: 1 Rejected: 0, Time: 03:20
+2021-02-15 16:12:48: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:12:56: [Statistics] Ethereum - Total speed: 49.902 MH/s, Total shares: 1 Rejected: 0, Time: 03:29
+2021-02-15 16:12:56: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:12:56: [Statistics] Ethereum - Total speed: 49.503 MH/s, Total shares: 1 Rejected: 0, Time: 03:29
+2021-02-15 16:12:56: [Statistics] Ethereum last 10 min - Total: 51.784 MH/s.
+2021-02-15 16:12:56: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:12:56: [Statistics] Ethereum - Total speed: 49.503 MH/s, Total shares: 1 Rejected: 0, Time: 03:29
+2021-02-15 16:12:56: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:12:56: [Statistics] Ethereum - Total speed: 49.503 MH/s, Total shares: 1 Rejected: 0, Time: 03:29
+2021-02-15 16:12:56: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:12:56: [Statistics] Ethereum - Total speed: 49.503 MH/s, Total shares: 1 Rejected: 0, Time: 03:29
+2021-02-15 16:12:56: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:12:56: [Statistics] Ethereum - Total speed: 49.503 MH/s, Total shares: 1 Rejected: 0, Time: 03:29
+2021-02-15 16:12:56: [Statistics] Ethereum last 10 min - Total: 51.784 MH/s.
+2021-02-15 16:12:59: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:12:59: [Statistics] Ethereum - Total speed: 49.569 MH/s, Total shares: 1 Rejected: 0, Time: 03:31
+2021-02-15 16:13:01: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:13:01: [Statistics] Ethereum - Total speed: 49.462 MH/s, Total shares: 1 Rejected: 0, Time: 03:34
+2021-02-15 16:13:04: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:13:04: [Statistics] Ethereum - Total speed: 49.441 MH/s, Total shares: 1 Rejected: 0, Time: 03:37
+2021-02-15 16:13:07: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:13:07: [Statistics] Ethereum - Total speed: 49.393 MH/s, Total shares: 1 Rejected: 0, Time: 03:40
+2021-02-15 16:13:07: [Statistics] Ethereum last 10 min - Total: 51.666 MH/s.
+2021-02-15 16:13:10: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:13:10: [Statistics] Ethereum - Total speed: 49.481 MH/s, Total shares: 1 Rejected: 0, Time: 03:43
+2021-02-15 16:13:13: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:13:13: [Statistics] Ethereum - Total speed: 49.299 MH/s, Total shares: 1 Rejected: 0, Time: 03:46
+2021-02-15 16:13:13: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:13:13: [Statistics] Ethereum - Total speed: 49.292 MH/s, Total shares: 1 Rejected: 0, Time: 03:46
+2021-02-15 16:13:16: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:13:16: [Statistics] Ethereum - Total speed: 49.518 MH/s, Total shares: 1 Rejected: 0, Time: 03:49
+2021-02-15 16:13:16: [Statistics] Ethereum last 10 min - Total: 51.572 MH/s.
+2021-02-15 16:13:19: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:13:19: [Statistics] Ethereum - Total speed: 49.559 MH/s, Total shares: 1 Rejected: 0, Time: 03:52
+2021-02-15 16:13:22: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:13:22: [Statistics] Ethereum - Total speed: 49.436 MH/s, Total shares: 1 Rejected: 0, Time: 03:55
+2021-02-15 16:13:25: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:13:25: [Statistics] Ethereum - Total speed: 49.516 MH/s, Total shares: 1 Rejected: 0, Time: 03:58
+2021-02-15 16:13:28: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:13:28: [Statistics] Ethereum - Total speed: 49.440 MH/s, Total shares: 1 Rejected: 0, Time: 04:01
+2021-02-15 16:13:28: [Statistics] Ethereum last 10 min - Total: 51.466 MH/s.
+2021-02-15 16:13:31: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:13:31: [Statistics] Ethereum - Total speed: 49.051 MH/s, Total shares: 1 Rejected: 0, Time: 04:04
+2021-02-15 16:13:34: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:13:34: [Statistics] Ethereum - Total speed: 49.172 MH/s, Total shares: 1 Rejected: 0, Time: 04:07
+2021-02-15 16:13:37: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:13:37: [Statistics] Ethereum - Total speed: 49.113 MH/s, Total shares: 1 Rejected: 0, Time: 04:10
+2021-02-15 16:13:40: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:13:40: [Statistics] Ethereum - Total speed: 49.201 MH/s, Total shares: 1 Rejected: 0, Time: 04:13
+2021-02-15 16:13:40: [Statistics] Ethereum last 10 min - Total: 51.354 MH/s.
+2021-02-15 16:13:43: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:13:43: [Statistics] Ethereum - Total speed: 49.097 MH/s, Total shares: 1 Rejected: 0, Time: 04:16
+2021-02-15 16:13:46: <info>  New job from eth-eu2.nanopool.org:9433
+2021-02-15 16:13:46: [Statistics] Ethereum - Total speed: 48.939 MH/s, Total shares: 1 Rejected: 0, Time: 04:19
+2021-02-15 16:13:46: <info>  Terminating, please wait ...
