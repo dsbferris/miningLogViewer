@@ -68,6 +68,11 @@ def get_nanominer_levin():
     else:
         print(f"log_path does not exists: \n{nanominer_log_path}")
 
+# 2021-04-25 03:21:34
+# 2021-05-23 16:31:01
+def phoenix_shares_in_time(start_time, end_time):
+
+
 
 def main():
     print("Nanominer:")
@@ -75,6 +80,8 @@ def main():
 
     print("Phoenixminer:")
     get_phoenix_miner()
+
+
 
 
 # main()
