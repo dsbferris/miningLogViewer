@@ -1,6 +1,7 @@
 import os
 import datetime
 
+
 def get_log_runtime(log_file_path):
     with open(log_file_path, "r") as log_file:
         log_file_text = log_file.read()
@@ -23,3 +24,18 @@ def get_all_logs_total_seconds(log_path) -> float:
         delta_sum += get_log_runtime(file_path)
     return delta_sum.total_seconds()
 
+
+def get_total_shares_in_time(log_path, start_time, end_time) -> int:
+    total_shares = 0
+    files = os.listdir(log_path)
+    for file in files:
+        log_file_path = os.path.join(log_path, file)
+        with open(log_file_path, "r") as log_file:
+            log_file_text = log_file.read()
+        if log_file_text.find("shares: ") == -1:
+            continue    # falls direkt gestartet und beendet wurde
+        # 2021.05.11:10:53:31.154: main Eth speed: 55.217 MH/s, shares: 322/0/2, time: 14:22
+        # total shares/rejected shares/incorrect shares
+        # shares: 0/0/0,
+
+    return 0
