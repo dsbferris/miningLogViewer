@@ -39,3 +39,40 @@ def get_total_shares_in_time(log_path, start_time, end_time) -> int:
         # shares: 0/0/0,
 
     return 0
+
+
+def phoenix_total_shares():
+    import requests
+    import datetime
+    response = requests.get("https://api.nanopool.org/v1/eth/payments/0x88276b6528b600e290f0c4598162aa31e0d30639")
+    dates = []
+    if response.ok:
+        json = response.json()
+        payout_data = json.get("data")
+        for data in reversed(payout_data):
+            dates.append(datetime.datetime.fromtimestamp(data.get("date")))
+
+    all_phoenix_log_files = []
+    for i in range(1, 12 + 1):
+        phoenix_log_path = rf"logs\original_logs\phoenixminer\{i:02d}"
+        if not os.path.exists(phoenix_log_path):
+            continue
+        files = os.listdir(phoenix_log_path)
+        all_phoenix_log_files += files
+
+    share_dict_list = []
+    next_payout_index = 0
+    for log_file_path in all_phoenix_log_files:
+        share_dict = dict(total=0, rejected=0, accepted=0)
+        with open(log_file_path, "r") as log_file:
+            log_file_text = log_file.read()
+
+        share_dict["total"] += 1
+        share_dict["accepted"] += 1
+
+        # 3 states: 1. sammeln für einen payout, 2. wechsel auf nächsten payout, 3. ignorieren für ausstehenden payout
+        # check if date is before first payout
+        # check if payout occured inside log
+        # check if date is after last payout
+
+

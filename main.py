@@ -37,6 +37,19 @@ def get_nanominer():
             print(f"log_path does not exists: \n{nanominer_log_path}")
 
 
+def get_nanominer_levin():
+    wattage = 170
+    price = 0.3
+    nanominer_log_path = r"logs/original_logs/levin_nanominer_logs/logs"
+    if os.path.exists(nanominer_log_path):
+        nanominer_total_seconds = nlv.get_total_seconds(nanominer_log_path)
+        print_statistics(nanominer_total_seconds, wattage, price)
+        nlv.find_possible_errors(nanominer_log_path, "8192 MB available")
+        print("\n")
+    else:
+        print(f"log_path does not exists: \n{nanominer_log_path}")
+
+
 def get_phoenix_miner():
 
     wattage = 170
@@ -56,25 +69,8 @@ def get_phoenix_miner():
             print(f"log_path does not exists: \n{phoenix_log_path}")
 
 
-def get_nanominer_levin():
-    wattage = 170
-    price = 0.3
-    nanominer_log_path = r"logs/original_logs/levin_nanominer_logs/logs"
-    if os.path.exists(nanominer_log_path):
-        nanominer_total_seconds = nlv.get_total_seconds(nanominer_log_path)
-        print_statistics(nanominer_total_seconds, wattage, price)
-        nlv.find_possible_errors(nanominer_log_path, "8192 MB available")
-        print("\n")
-    else:
-        print(f"log_path does not exists: \n{nanominer_log_path}")
 
-# 2021-04-25 03:21:34
-# 2021-05-23 16:31:01
-def phoenix_shares_in_time(start_time, end_time):
-
-
-
-def main():
+def read_my_logs():
     print("Nanominer:")
     get_nanominer()
 
@@ -84,5 +80,5 @@ def main():
 
 
 
-# main()
-get_nanominer_levin()
+phoenix_total_shares()
+# get_nanominer_levin()
