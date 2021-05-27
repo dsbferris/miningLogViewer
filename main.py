@@ -79,6 +79,5 @@ def read_my_logs():
 
 
 
-
-phoenix_total_shares()
+plv.phoenix_total_shares()
 # get_nanominer_levin()
