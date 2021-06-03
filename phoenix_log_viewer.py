@@ -2,7 +2,8 @@ import os
 import datetime
 import requests
 
-#region Runtime
+
+# region Runtime
 
 
 def get_log_runtime(log_file_path):
@@ -27,11 +28,18 @@ def get_all_logs_total_seconds(log_path) -> float:
         delta_sum += get_log_runtime(file_path)
     return delta_sum.total_seconds()
 
-#endregion
 
-#region Share counting
+# endregion
+
+
+# region Share counting
+
+
 def get_line_datetime(line: str) -> datetime.datetime:
-    return datetime.datetime.strptime(line.split(": ")[0], '%Y.%m.%d:%H:%M:%S.%f')
+    try:
+        return datetime.datetime.strptime(line.split(": ")[0], '%Y.%m.%d:%H:%M:%S.%f')
+    except ValueError:
+        return datetime.datetime.min
 
 
 def get_nanopool_payout_dates() -> list[datetime.datetime]:
@@ -64,44 +72,47 @@ def add_dicts(a: dict, b: dict) -> dict:
         raise Exception("dicts dont fit keys!!!s")
     else:
         for key in a.keys():
-            a[key] += b[key]
+            if not isinstance(a[key], int):
+                raise Exception("a is not int!")
+            elif not isinstance(b[key], int):
+                raise Exception("b is not int!")
+            else:
+                a[key] += b[key]
 
         return a
 
 
-def get_share_stats_from_log_inside_payout_window(lines: list[str]) -> dict:
+def get_share_dict_from_line(line) -> dict:
     share_dict = dict(accepted=0, rejected=0, incorrect=0)
-
-    for line in reversed(lines):
-        if line.find("shares: ") != -1:
-            shares = line.split("shares: ")[1].split(",")[0].split("/")
-            # print(shares)
-            share_dict['accepted'] = shares[0]
-            share_dict['rejected'] = shares[1]
-            share_dict['incorrect'] = shares[2]
-            break
-    del line, lines
-    print(share_dict)
+    shares = line.split("shares: ")[1].split(",")[0].split("/")
+    # print(shares)
+    share_dict['accepted'] = int(shares[0])
+    share_dict['rejected'] = int(shares[1])
+    share_dict['incorrect'] = int(shares[2])
     return share_dict
 
 
-def get_share_stats_from_log_before_payout_part(lines: list[str], next_payout_timestamp: datetime.datetime) -> dict:
+def get_share_stats_from_log_inside_payout_window(lines: list[str]) -> dict:
+    for line in reversed(lines):
+        if line.find("shares: ") != -1:
+            return get_share_dict_from_line(line)
+    del line, lines
 
-    share_dict = dict(accepted=0, rejected=0, incorrect=0)
-    for i in range(0, len(lines)):
-        line_timestamp = get_line_datetime(lines[i])
+
+# this is still slow, maybe improve code here
+def get_share_stats_from_log_before_payout_part(lines: list[str], next_payout_timestamp: datetime.datetime) -> dict:
+    for line in reversed(lines):
+        line_timestamp = get_line_datetime(line)
+        if line_timestamp == datetime.datetime.min:
+            continue    # in case of a line like 'GPUs Power...' without timestamp
         if line_timestamp < next_payout_timestamp:
-            if lines[i].find("shares: ") != -1:
-                shares = lines[i].split("shares: ")[1].split(",")[0].split("/")
-                # print(shares)
-                share_dict['accepted'] = shares[0]
-                share_dict['rejected'] = shares[1]
-                share_dict['incorrect'] = shares[2]
-                return share_dict
+            if line.find("shares: ") != -1:
+                return get_share_dict_from_line(line)
 
 
 def phoenix_total_shares():
     payout_dates = get_nanopool_payout_dates()
+    payout_dates.append(datetime.datetime.max)
     all_phoenix_log_files = get_list_of_all_phoenix_log_file_paths()
 
     share_dict_list = []
@@ -113,10 +124,21 @@ def phoenix_total_shares():
         with open(log_file_path, "r") as log_file:
             log_file_text = log_file.read()
         del log_file
+        # check if log is valid at all
+        if log_file_text.find("shares: ") == -1:
+            print("Skipped empty log:")
+            print(log_file_path)
+            print("")
+            continue
 
         lines = log_file_text.splitlines(keepends=False)
         log_start_time = get_line_datetime(lines[0])
         log_end_time = get_line_datetime(lines[-1])
+
+        if i == 0:
+            while log_end_time > payout_dates[next_payout_index]:
+                next_payout_index += 1
+                share_dict_list.append(dict(accepted=0, rejected=0, incorrect=0))
 
         if log_start_time < payout_dates[next_payout_index]:
             if log_end_time < payout_dates[next_payout_index]:
@@ -131,42 +153,30 @@ def phoenix_total_shares():
             else:
                 print("Payout inside this log")
                 print(log_file_path)
-                # get first part
-                next_payout_timestamp = payout_dates[i]
-                first_part = get_share_stats_from_log_before_payout_part(lines, next_payout_timestamp)
+                first_part = get_share_stats_from_log_before_payout_part(lines, payout_dates[next_payout_index])
+                print(first_part)
                 share_dict = add_dicts(share_dict, first_part)
                 share_dict_list.append(share_dict)
-                for key in share_dict.keys():
-                    share_dict[key] = 0
-                del key
 
                 next_payout_index += 1
-                if next_payout_index >= len(payout_dates):
-                    print("Alle payout daten gesammelt. Kein grund weiter logs zu durchsuchen")
-                    break
 
                 second_part = get_share_stats_from_log_inside_payout_window(lines)
                 for key in first_part.keys():
                     second_part[key] -= first_part[key]
-                share_dict = add_dicts(share_dict, second_part)
+                share_dict = second_part
                 print(second_part)
                 print("")
+                del first_part, second_part, key
         else:
             print("payout occured between logs")
             next_payout_index += 1
-            if next_payout_index >= len(payout_dates):
-                print("Alle payout daten gesammelt. Kein grund weiter logs zu durchsuchen")
-                break
-            else:
-                share_dict_list.append(share_dict)
+            share_dict_list.append(share_dict)
+    share_dict_list.append(share_dict)
+    del share_dict, i, next_payout_index, log_file_text, log_file_path, log_start_time, log_end_time, lines, all_phoenix_log_files
+    if len(payout_dates) != len(share_dict_list):
+        raise Exception("not fitting payout dates and share_dict_list length!")
 
-        # datetime.datetime.strptime(first_line_time, '%Y.%m.%d:%H:%M:%S.%f')
-        # 2021.05.10:20:30:45.561
+    for i in range(0, len(share_dict_list)):
+        print(f"{payout_dates[i]}: {share_dict_list[i]}")
 
-        # 3 states: 1. sammeln für einen payout, 2. wechsel auf nächsten payout, 3. ignorieren für ausstehenden payout
-        # check if date is before first payout
-        # check if payout occured inside log
-        # check if date is after last payout
-
-
-#endregion
+# endregion

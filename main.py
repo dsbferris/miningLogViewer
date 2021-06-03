@@ -17,7 +17,6 @@ def print_statistics(total_seconds: int, wattage: int, price: float):
           % (wattage, price, kwh, kwh * price))
 
 
-
 def get_nanominer():
     wattage = 170
     for i in range(2, 7):
@@ -51,7 +50,6 @@ def get_nanominer_levin():
 
 
 def get_phoenix_miner():
-
     wattage = 170
     for i in range(2, 7):
         print(f"Month: {i}")
@@ -69,7 +67,6 @@ def get_phoenix_miner():
             print(f"log_path does not exists: \n{phoenix_log_path}")
 
 
-
 def read_my_logs():
     print("Nanominer:")
     get_nanominer()
@@ -78,6 +75,6 @@ def read_my_logs():
     get_phoenix_miner()
 
 
-
 plv.phoenix_total_shares()
+
 # get_nanominer_levin()
