@@ -1,4 +1,12 @@
 import os
+import datetime
+import pathlib
+
+import requests
+import phoenix_log_viewer as plv
+from pathlib import Path
+
+# region Runtime Analysis
 
 
 # Writes big_log into big_log_path
@@ -98,3 +106,52 @@ def get_total_seconds(log_path):
     big_log = read_all_logs_and_return_big_log(log_path)
     total_seconds = read_total_seconds_from_big_log(big_log)
     return total_seconds
+
+
+#endregion
+
+
+def get_line_datetime(line: str) -> datetime.datetime:
+    # old: 2021-02-27 17:24:24: <info>.....
+    # new 2021-Apr-30 20:58:17:
+    line = line[:20].removesuffix(":")
+    try:
+        return datetime.datetime.strptime(line.split(": ")[0], '%Y-%m-%d %H:%M:%S')
+    except ValueError:
+        try:
+            return datetime.datetime.strptime(line.split(": ")[0], '%Y-%b-%d %H:%M:%S')
+        except ValueError:
+            return datetime.datetime.min
+
+
+levin_rootpath = "./logs/original_logs/levin_nanominer_logs/levin_new"
+ferris_rootpath = "./logs/original_logs/nanominer"
+
+
+def get_list_of_all_nanominer_log_file_paths(rootpath: str):
+    return list(Path(rootpath).rglob("*.*"))
+
+
+def get_share_dict_from_line(line) -> dict:
+    share_dict = dict(total=0, rejected=0, accepted=0)
+    line_split = line.split("Total shares: ")[1]
+
+    total_shares = int(line_split.split(" ")[0])
+    rejected_shares = int(line_split.split("Rejected: ")[0])
+
+    share_dict['total'] = total_shares
+    share_dict['rejected'] = rejected_shares
+    share_dict['accepted'] = total_shares - rejected_shares
+    del line_split, total_shares, rejected_shares
+    return share_dict
+
+
+def get_share_stats_from_log_inside_payout_window(lines: list[str]) -> dict:
+    for line in reversed(lines):
+        if line.find("Total shares: ") != -1:
+            return get_share_dict_from_line(line)
+    del line, lines
+
+
+dates = plv.get_nanopool_payout_dates()
+ddict = plv.add_dicts(dict(), dict())
