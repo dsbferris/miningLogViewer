@@ -1,6 +1,5 @@
 import os
-import datetime
-import pathlib
+from datetime import datetime
 
 import requests
 import phoenix_log_viewer as plv
@@ -111,47 +110,50 @@ def get_total_seconds(log_path):
 #endregion
 
 
-def get_line_datetime(line: str) -> datetime.datetime:
+def _get_line_datetime(line: str) -> datetime:
     # old: 2021-02-27 17:24:24: <info>.....
     # new 2021-Apr-30 20:58:17:
     line = line[:20].removesuffix(":")
     try:
-        return datetime.datetime.strptime(line.split(": ")[0], '%Y-%m-%d %H:%M:%S')
+        return datetime.strptime(line.split(": ")[0], '%Y-%m-%d %H:%M:%S')
     except ValueError:
         try:
-            return datetime.datetime.strptime(line.split(": ")[0], '%Y-%b-%d %H:%M:%S')
+            return datetime.strptime(line.split(": ")[0], '%Y-%b-%d %H:%M:%S')
         except ValueError:
-            return datetime.datetime.min
+            return datetime.min
 
 
 levin_rootpath = "./logs/original_logs/levin_nanominer_logs/levin_new"
 ferris_rootpath = "./logs/original_logs/nanominer"
 
 
-def get_list_of_all_nanominer_log_file_paths(rootpath: str):
+def _get_list_of_all_nanominer_log_file_paths(rootpath: str):
     return list(Path(rootpath).rglob("*.*"))
 
 
-def get_share_dict_from_line(line) -> dict:
+def _get_share_dict_from_line(line) -> dict:
     share_dict = dict(total=0, rejected=0, accepted=0)
     line_split = line.split("Total shares: ")[1]
-
-    total_shares = int(line_split.split(" ")[0])
-    rejected_shares = int(line_split.split("Rejected: ")[0])
+    line_split = line_split.split("Rejected: ")
+    total_shares = int(line_split[0])
+    rejected_shares = int(line_split[1].split(",")[0])
 
     share_dict['total'] = total_shares
     share_dict['rejected'] = rejected_shares
-    share_dict['accepted'] = total_shares - rejected_shares
+    share_dict['accepted'] = (total_shares - rejected_shares)
     del line_split, total_shares, rejected_shares
     return share_dict
 
 
-def get_share_stats_from_log_inside_payout_window(lines: list[str]) -> dict:
+def _get_last_share_line(lines: list[str]) -> dict:
     for line in reversed(lines):
         if line.find("Total shares: ") != -1:
-            return get_share_dict_from_line(line)
+            return _get_share_dict_from_line(line)
     del line, lines
 
 
-dates = plv.get_nanopool_payout_dates()
+def get_total_shares(root_log_path: str, payout_dates: list[datetime]):
+    dates = plv.get_nanopool_payout_dates()
+    all_log_paths = _get_list_of_all_nanominer_log_file_paths(root_log_path)
+
 ddict = plv.add_dicts(dict(), dict())
