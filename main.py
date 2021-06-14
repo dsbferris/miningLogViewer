@@ -6,21 +6,43 @@ import pathlib
 from sub_classes import phoenix_log_viewer as phoenix, nanominer_log_viewer as nano
 
 
-class LogEvalClass:
-    payout_worked_for: datetime
-    worker_name: str
-    runtime: timedelta
+class ShareClass(object):
     total_shares: int
     accepted_shares: int
     rejected_shares: int
 
-    def __init__(self, pwf: datetime = datetime.min, name="Default", runtime=timedelta(0),
-                 total=0, accepted=0, rejected=0):
-        self.payout_worked_for = pwf
+    def __init__(self, total=0, accepted=0, rejected=0):
         self.total_shares = total
         self.accepted_shares = accepted
         self.rejected_shares = rejected
-        self.worker_name = name
+
+    def __add__(self, other):
+        total = self.total_shares + other.total_shares
+        accepted = self.accepted_shares + other.accepted_shares
+        rejected = self.rejected_shares + other.rejected_shares
+        return ShareClass(total, accepted, rejected)
+
+    def __radd__(self, other):
+        if other == 0:
+            return self
+        else:
+            return self.__add__(other)
+
+    def __str__(self):
+        return f"Total: {self.total_shares} (Accepted: {self.accepted_shares}/Rejected: {self.rejected_shares})"
+
+
+class LogEvalClass:
+    payout_worked_for: datetime
+    worker_name: str
+    runtime: timedelta
+    shares: ShareClass
+
+    def __init__(self, payout_worked_for: datetime = datetime.min, worker_name="Default", runtime=timedelta(0),
+                 shares: ShareClass = ShareClass()):
+        self.payout_worked_for = payout_worked_for
+        self.shares = shares
+        self.worker_name = worker_name
         self.runtime = runtime
 
     def get_power_cost(self, wattage: int, cost_per_kwh_in_eur: decimal) -> decimal:
@@ -29,6 +51,10 @@ class LogEvalClass:
         kwh = kilo_wattage * hours
         cost = kwh * cost_per_kwh_in_eur
         return cost
+
+    def __str__(self):
+        return f"Payout {self.payout_worked_for} "
+
 
 
 def get_all_log_files_from_directory(root_dir: str) -> list[pathlib.Path]:
@@ -64,13 +90,9 @@ ferris_nano_root_path = r"logs\original_logs\nanominer"
 ferris_phoenix_root_path = r"logs\original_logs\phoenixminer"
 
 LogEvalList: list[LogEvalClass] = [LogEvalClass(),
-                                   LogEvalClass(pwf=datetime.max, name="sample", runtime=timedelta(seconds=120),
+                                   LogEvalClass(payout_worked_for=datetime.max, worker_name="sample", runtime=timedelta(seconds=120),
                                                 total=10, accepted=8, rejected=2)
                                    ]
-
-
-
-
 
 
 # region Runtime analysis
@@ -147,6 +169,4 @@ def read_my_logs():
     print("Phoenixminer:")
     get_phoenix_miner()
 
-
 # endregion
-
