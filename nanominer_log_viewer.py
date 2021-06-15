@@ -1,9 +1,8 @@
 import os
 from datetime import datetime
 
-import requests
-import phoenix_log_viewer as plv
 from pathlib import Path
+from main import ShareClass, LogEvalClass
 
 # region Runtime Analysis
 
@@ -156,4 +155,6 @@ def get_total_shares(root_log_path: str, payout_dates: list[datetime]):
     dates = plv.get_nanopool_payout_dates()
     all_log_paths = _get_list_of_all_nanominer_log_file_paths(root_log_path)
 
-ddict = plv.add_dicts(dict(), dict())
+
+def analyse_nano_log(path: Path, payout_dates: list[datetime]):
+    return [LogEvalClass(), LogEvalClass()]
