@@ -2,7 +2,7 @@ import logging
 from datetime import datetime, timedelta
 import requests
 import pathlib
-
+from colorama import Fore
 
 class ShareClass(object):
     accepted_shares: int
@@ -39,13 +39,16 @@ class LogEvalClass:
         self.shares = shares
         self.runtime = runtime
 
-    def get_power_cost(self, wattage: int, cost_per_kwh_in_eur: float) -> float:
+    def get_power_cost(self, wattage: int, kwh_price: float) -> float:
         hours = self.runtime.total_seconds() / 3600
         kilo_wattage = wattage / 1000
         kwh = kilo_wattage * hours
-        cost = kwh * cost_per_kwh_in_eur
+        cost = kwh * kwh_price
         cost = round(cost, 2)
         return cost
+
+    def get_power_cost_string(self, wattage: int, kwh_price: float) -> str:
+        return f"At {wattage}W at {'{:0,.2f}'.format(kwh_price)}€/KWh: {'{:0,.2f}'.format(self.get_power_cost(wattage=wattage, kwh_price=kwh_price))}€"
 
     def __str__(self):
         return f"For Payout: {self.payout_worked_for.isoformat(' ', 'seconds')}, " \
@@ -54,7 +57,7 @@ class LogEvalClass:
 
     def __add__(self, other):
         if self.payout_worked_for != other.payout_worked_for:
-            logging.warn("You should not add different payouts!")
+            print(Fore.RED + "You should not add different payouts!" + Fore.RESET)
 
         return LogEvalClass(payout_worked_for=self.payout_worked_for,
                             shares=(self.shares + other.shares),

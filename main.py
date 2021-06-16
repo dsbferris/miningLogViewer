@@ -7,6 +7,8 @@ from phoenix_log_viewer import analyse_phoenix_log
 from colorama import init, Fore
 
 init()
+
+
 # Fore: BLACK, RED, GREEN, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET
 
 
@@ -50,12 +52,9 @@ def sum_log_evals(log_eval_list: list[LogEvalClass]) -> list[LogEvalClass]:
     return sorted_eval_list
 
 
-def start():
-    levin_new_nano_root_path = r"logs\original_logs\levin_nanominer_logs\levin_new"
-    ferris_nano_root_path = r"logs\original_logs\nanominer"
-
-    payout_dates = get_nanopool_payout_dates()
-    payout_dates.append(datetime.max)  # For next upcoming payout
+def run_ferris_phoenix(payout_dates: list[datetime]):
+    kwh_price = 0.3
+    wattage = 170
 
     ferris_phoenix_root_path = r"logs\original_logs\phoenixminer"
     ferris_phoenix_list: list[LogEvalClass] = []
@@ -67,33 +66,36 @@ def start():
     print("\n")
     ferris_phoenix_list = sum_log_evals(ferris_phoenix_list)
     for e in ferris_phoenix_list:
-        print(f"{Fore.GREEN}"
-              f"{e}\n"
-              f"At 170W & 0,30€/KWh: {e.get_power_cost(wattage=170, cost_per_kwh_in_eur=0.3)}€"
-              f"{Fore.RESET}")
+        print(f"{Fore.GREEN}{e}\n{e.get_power_cost_string(wattage=wattage, kwh_price=kwh_price)}{Fore.RESET}")
 
     print("\nTotal:")
     total: LogEvalClass = ferris_phoenix_list[0]
     for i in range(1, len(ferris_phoenix_list)):
         total += ferris_phoenix_list[i]
     total.payout_worked_for = datetime.min
-    print(f"{total}\n"
-          f"At 170W & 0,30€/KWh: {total.get_power_cost(wattage=170, cost_per_kwh_in_eur=0.3)}€")
-    exit(0)
+    print(f"{total}\n{total.get_power_cost_string(wattage=wattage, kwh_price=kwh_price)}")
 
-    # levin_list: list[LogEvalClass] = []
-    # print("Levin Nanominer:")
-    # for path in get_all_log_files_from_directory(levin_new_nano_root_path):
-    #     levin_list += analyse_nano_log(path, payout_dates)
-    #
-    # print("\n\n")
-    #
+
+def run_ferris_nano(payout_dates: list[datetime]):
+    ferris_nano_root_path = r"logs\original_logs\nanominer"
     # ferris_nano_list: list[LogEvalClass] = []
     # print("Ferris Nanominer: ")
     # for path in get_all_log_files_from_directory(ferris_nano_root_path):
     #     ferris_nano_list += analyse_nano_log(path, payout_dates)
 
 
+def run_levin_nano(payout_dates: list[datetime]):
+    levin_new_nano_root_path = r"logs\original_logs\levin_nanominer_logs\levin_new"
+    # levin_list: list[LogEvalClass] = []
+    # print("Levin Nanominer:")
+    # for path in get_all_log_files_from_directory(levin_new_nano_root_path):
+    #     levin_list += analyse_nano_log(path, payout_dates)
+
+
+def start():
+    payout_dates = get_nanopool_payout_dates()
+    payout_dates.append(datetime.max)  # For next upcoming payout
+    run_ferris_phoenix(payout_dates)
 
 
 start()
