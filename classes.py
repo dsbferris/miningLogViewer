@@ -1,3 +1,4 @@
+import logging
 from datetime import datetime, timedelta
 import requests
 import pathlib
@@ -15,12 +16,6 @@ class ShareClass(object):
         return ShareClass(accepted=self.accepted_shares + other.accepted_shares,
                           rejected=self.rejected_shares + other.rejected_shares)
 
-    # def __radd__(self, other):
-    #     if other == 0:
-    #         return self
-    #     else:
-    #         return self.__add__(other)
-
     def __sub__(self, other):
         if self.accepted_shares > other.accepted_shares or self.rejected_shares > other.rejected_shares:
             return ShareClass(accepted=(self.accepted_shares - other.accepted_shares),
@@ -28,12 +23,6 @@ class ShareClass(object):
         else:
             return ShareClass(accepted=(other.accepted_shares - self.accepted_shares),
                               rejected=(other.rejected_shares - self.rejected_shares))
-
-    # def __rsub__(self, other):
-    #     if other == 0:
-    #         return self
-    #     else:
-    #         return self.__sub__(other)
 
     def __str__(self):
         return f"Accepted: {self.accepted_shares}, Rejected: {self.rejected_shares}"
@@ -55,7 +44,18 @@ class LogEvalClass:
         kilo_wattage = wattage / 1000
         kwh = kilo_wattage * hours
         cost = kwh * cost_per_kwh_in_eur
+        cost = round(cost, 2)
         return cost
 
     def __str__(self):
-        return f"For Payout: {self.payout_worked_for.isoformat(' ', 'seconds')}, Runtime: {self.runtime}, {self.shares}"
+        return f"For Payout: {self.payout_worked_for.isoformat(' ', 'seconds')}, " \
+               f"Runtime: {str(self.runtime).split('.')[0]}, " \
+               f"{self.shares}"
+
+    def __add__(self, other):
+        if self.payout_worked_for != other.payout_worked_for:
+            logging.warn("You should not add different payouts!")
+
+        return LogEvalClass(payout_worked_for=self.payout_worked_for,
+                            shares=(self.shares + other.shares),
+                            runtime=(self.runtime + other.runtime))
