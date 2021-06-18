@@ -58,6 +58,7 @@ def _get_share_stats_from_log_before_payout_part(lines: list[str], next_payout_t
 
 
 def analyse_nano_log(log_file_path: Path, payout_dates: list[datetime]) -> [list[LogEvalClass], bool]:
+    print("")
     print(log_file_path)
     with open(log_file_path, "r") as log_file:
         log_file_text = log_file.read()
@@ -80,6 +81,9 @@ def analyse_nano_log(log_file_path: Path, payout_dates: list[datetime]) -> [list
         if lines[i].find(wallet) != -1:
             continuing_log = False
             break
+    if continuing_log:
+        print("Is continuing log!")
+        pass
     del wallet
 
     for payout in payout_dates:
