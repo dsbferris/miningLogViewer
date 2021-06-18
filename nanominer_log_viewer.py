@@ -72,8 +72,15 @@ def analyse_nano_log(log_file_path: Path, payout_dates: list[datetime]) -> [list
     log_start_time = _get_first_dateline(lines)
     log_end_time = _get_last_dateline(lines)
 
-    continueing_log = False
+    continuing_log = True
     # prüfe ob dies ein fortführender log ist, wenn ja setze
+    wallet = "wallet"
+    # die ersten 20 lines oder wenn die datei kleiner ist, die länge
+    for i in range(0, min(20, len(lines))):
+        if lines[i].find(wallet) != -1:
+            continuing_log = False
+            break
+    del wallet
 
     for payout in payout_dates:
         if log_start_time < payout:
@@ -83,7 +90,7 @@ def analyse_nano_log(log_file_path: Path, payout_dates: list[datetime]) -> [list
                                         shares=_get_shares_from_log_inside_payout_window(lines),
                                         runtime=log_end_time - log_start_time)
                 print(log_eval)
-                return [[log_eval], continueing_log]
+                return [[log_eval], continuing_log]
             else:
                 # print("Payout inside this log")
                 first = _get_share_stats_from_log_before_payout_part(lines, payout)
@@ -100,7 +107,7 @@ def analyse_nano_log(log_file_path: Path, payout_dates: list[datetime]) -> [list
                                            shares=second,
                                            runtime=log_end_time - payout)
                 print(second_eval)
-                return [[first_eval, second_eval], continueing_log]
+                return [[first_eval, second_eval], continuing_log]
 
         else:
             pass
