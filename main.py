@@ -19,7 +19,7 @@ def get_all_log_files_from_directory(root_dir: Path) -> list[Path]:
 
 
 def get_nanopool_payout_dates() -> list[datetime]:
-    response = requests.get("https://api.nanopool.org/v1/eth/payments/0x88276b6528b600e290f0c4598162aa31e0d30639")
+    response = requests.get("https://api.nanopool.org/v1/eth/payments/YOURWALLET")
     dates = []
     if response.ok:
         json = response.json()
@@ -31,7 +31,7 @@ def get_nanopool_payout_dates() -> list[datetime]:
 
 
 def get_nanopool_worker_ratings() -> list[dict]:
-    response = requests.get("https://api.nanopool.org/v1/eth/workers/0x88276b6528b600e290f0c4598162aa31e0d30639")
+    response = requests.get("https://api.nanopool.org/v1/eth/workers/YOURWALLET")
     workers: list[dict] = []
     if response.ok:
         json = response.json()

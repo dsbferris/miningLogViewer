@@ -75,7 +75,7 @@ def analyse_nano_log(log_file_path: Path, payout_dates: list[datetime]) -> [list
 
     continuing_log = True
     # prüfe ob dies ein fortführender log ist, wenn ja setze
-    wallet = "wallet"
+    wallet = "YOURWALLET"
     # die ersten 20 lines oder wenn die datei kleiner ist, die länge
     for i in range(0, min(20, len(lines))):
         if lines[i].find(wallet) != -1:
